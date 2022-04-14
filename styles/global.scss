@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,600;1,700&display=swap');
+@import './mdx.scss';
+
+body {
+  font-family: 'Titillium Web';
+  font-size: 18px;
+}
+
+.dash {
+  color: #ff851b;
+  @keyframes flickerAnimation {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  animation: flickerAnimation 1s infinite;
+}
