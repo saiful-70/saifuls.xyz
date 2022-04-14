@@ -9,10 +9,10 @@ class MyDocument extends Document {
         <Head>
           <link rel="icon" type="image/png" href="/portfolio-logo.png" />
           <link rel="icon" type="image/png" href="/portfolio-logo.png" />
-          <script
+          {/* <script
             async
-            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}></script>
-          <script
+            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}></script> */}
+          {/* <script
             dangerouslySetInnerHTML={{
               __html: `
             window.dataLayer = window.dataLayer || [];
@@ -23,7 +23,7 @@ class MyDocument extends Document {
             });
           `
             }}
-          />
+          /> */}
         </Head>
         <body>
           <ColorModeScript initialColorMode={theme.config.initialColorMode} />
