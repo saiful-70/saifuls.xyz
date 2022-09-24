@@ -59,7 +59,8 @@ const MobileNavMenu: React.FC = () => {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            mt: 2,
+            pt: 2,
+            bgcolor: "primary.main",
           }}
         >
           <Box
@@ -95,9 +96,7 @@ const MobileNavMenu: React.FC = () => {
 
           <Social />
 
-          {/* {Object.keys(pages).map((page: string) => {
-            console.log(pages[page]);
-          })} */}
+          {/* <Divider sx={{ mt: 3 }} /> */}
 
           {/* <Box
             sx={{

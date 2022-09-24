@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { Box, Typography } from "@mui/material";
+import { Box, Divider, Typography } from "@mui/material";
 import { keyframes } from "@emotion/react";
 import Social from "../Social";
 
@@ -91,6 +91,7 @@ const Header: React.FC = () => {
         </Typography>
       </Box>
       <Social />
+      <Divider sx={{ mt: 3 }} />
     </React.Fragment>
   );
 };

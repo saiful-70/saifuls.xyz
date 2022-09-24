@@ -10,6 +10,7 @@ const HeadingSecondary: React.FC<headingProps> = ({ name }) => {
     <Typography
       variant="h6"
       sx={{
+        display: "inline-block",
         fontWeight: "bold",
         mb: 3,
         position: "relative",
@@ -17,8 +18,8 @@ const HeadingSecondary: React.FC<headingProps> = ({ name }) => {
           position: "absolute",
           content: `""`,
           display: "block",
-          width: "20vw",
-          height: 5,
+          width: "50%",
+          height: 4,
           backgroundColor: "secondary.main",
         },
       }}

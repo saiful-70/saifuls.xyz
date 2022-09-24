@@ -4,36 +4,23 @@ import HeadingSecondary from "../Heading/HeadingSecondary";
 import ProjectCard from "../Projects/ProjectCard";
 
 import { recentProjects } from "../../utils/projectData";
+import BtnPrimary from "../Button/BtnPrimary";
+import Link from "next/link";
 
 const Projects: React.FC = () => {
   return (
     <Box sx={{ py: 5 }}>
       <HeadingSecondary name="Recent Projects" />
-      <Grid container spacing={5} sx={{ px: 3 }}>
+      <Grid container spacing={5} sx={{ px: 3, justifyContent: "center" }}>
         {recentProjects.map((item) => (
-          <Grid item xs={12} key={item.name}>
+          <Grid item xs={12} sm={6} md={6} key={item.name}>
             <ProjectCard item={item} />
           </Grid>
         ))}
       </Grid>
-      <Button
-        // size="small"
-        variant="outlined"
-        sx={{
-          // width: "100%",
-          margin: "20px auto",
-          px: 2,
-          display: "block",
-          fontWeight: "700",
-          color: "text.primary",
-          bgcolor: "secondary.main",
-          "&:hover": {
-            bgcolor: "secondary.main",
-          },
-        }}
-      >
-        See All Projects {">"}
-      </Button>
+      <Link href="/projects">
+        <BtnPrimary name="See All Projects" />
+      </Link>
     </Box>
   );
 };

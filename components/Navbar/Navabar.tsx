@@ -77,7 +77,7 @@ const Navbar: React.FC = () => {
                   sx={{ mr: { xs: 1, md: 0 } }}
                   onClick={colorMode.toggleColorMode}
                 >
-                  <MdDarkMode />
+                  <MdDarkMode style={{ color: "#000" }} />
                 </IconButton>
               ) : (
                 <IconButton
