@@ -50,10 +50,6 @@ const Header: React.FC = () => {
           Islam
         </Typography>
         <Typography variant="body1" textAlign="center">
-          {/* {`I'm`} a Front-end developer. I love JavaScript. which along with
-          other acroynms gives me superpowers to develop compelling front-end,
-          intuitive yet minimalistic interfaces and engaging designs.{`I'm`}{" "}
-          quite confident naturally curious, and improving my skills. */}
           Front-end Developer, Tech Enthusiast
         </Typography>
       </Box>
@@ -104,7 +100,7 @@ const Header: React.FC = () => {
           </Button>
         </Link>
         <Link
-          href="https://docs.google.com/document/d/15YxBQtXQmLFtUS8sXrHEOFAzH2auGuPSl480dcqBvxo/edit?usp=sharing"
+          href="/resume/resume-saiful.pdf"
           target="_blank"
           sx={{ textDecoration: "none", mx: 0.3 }}
         >
