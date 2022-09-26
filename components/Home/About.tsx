@@ -1,4 +1,4 @@
-import { Box, Typography, Button } from "@mui/material";
+import { Box, Typography, Button, Link as MuiLink } from "@mui/material";
 import Link from "next/link";
 import React from "react";
 import BtnPrimary from "../Button/BtnPrimary";
@@ -9,10 +9,11 @@ const About: React.FC = () => {
     <Box sx={{ pt: 3 }}>
       <HeadingSecondary name="About Me" />
       <Typography variant="body1">
-        {"I'm"} a Front-end developer. I love JavaScript. which along with other
-        acroynms gives me superpowers to develop compelling front-end, intuitive
-        yet minimalistic interfaces and engaging designs.{"I'm "}quite confident
-        naturally curious, and improving my skills.
+        {`I'm`} a Front-end developer and problem solver. I love JavaScript and
+        C++. {`I'm`} learning javascript and {`it's`} related technology for 3+
+        years. Which is helping me to develop intuitive, minimalistics front-end
+        interfaces and designs.{`I'm`} tech enthuasists and gradually improving
+        my skills.
       </Typography>
       {/* <Button
         // size="small"
@@ -33,9 +34,13 @@ const About: React.FC = () => {
       >
         Details {">"}
       </Button> */}
+
       <Link href="/about">
-        <BtnPrimary name="Details" />
+        <BtnPrimary name="Details" link="/about" />
       </Link>
+      {/* <Box sx={{ textAlign: "center" }}> */}
+
+      {/* </Box> */}
     </Box>
   );
 };

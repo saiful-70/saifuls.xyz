@@ -1,0 +1,20 @@
+.input {
+  height: 40px;
+  width: 60%;
+  outline: none;
+  border: none;
+  padding-left: 8px;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #000;
+  font-size: 16px;
+  transition: outline 0.3s;
+}
+
+/* .input:hover {
+  outline: 1px solid #1a202c;
+} */
+
+.input:focus {
+  outline: 1px solid #ff851b;
+}

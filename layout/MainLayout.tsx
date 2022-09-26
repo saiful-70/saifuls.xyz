@@ -9,16 +9,16 @@ type Props = {
   children?: React.ReactNode;
 };
 
-const Main: React.FC<Props> = ({ children }) => {
+const MainLayout: React.FC<Props> = ({ children }) => {
   return (
-    <Box sx={{ bgcolor: "primary.main" }}>
+    <Box sx={{ bgcolor: "primary.main", minHeight: "100vh" }}>
       <CssBaseline />
       <Navbar />
       <Container maxWidth="md">
-        <Box sx={{ px: 2 }}>{children}</Box>
+        <Box sx={{ px: 3 }}>{children}</Box>
       </Container>
       <Footer />
     </Box>
   );
 };
-export default Main;
+export default MainLayout;

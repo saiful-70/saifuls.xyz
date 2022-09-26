@@ -12,7 +12,7 @@ const HeadingSecondary: React.FC<headingProps> = ({ name }) => {
       sx={{
         display: "inline-block",
         fontWeight: "bold",
-        mb: 3,
+        mb: 2,
         position: "relative",
         "&::after": {
           position: "absolute",

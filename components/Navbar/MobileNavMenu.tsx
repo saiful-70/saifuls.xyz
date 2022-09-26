@@ -14,14 +14,12 @@ import Image from "next/image";
 import Social from "../Social";
 import Header from "../Home/Header";
 
-interface pageType {
-  home: string;
+interface IPage {
   projects: string;
   about: string;
 }
 
-export const pages: pageType = {
-  home: "/",
+export const pages: IPage = {
   projects: "/projects",
   about: "/about",
 };
@@ -51,12 +49,19 @@ const MobileNavMenu: React.FC = () => {
       >
         <MenuIcon />
       </IconButton>
-      <Drawer anchor="left" open={mobileMenuOpen} onClose={handleClose}>
+      <Drawer
+        anchor="left"
+        open={mobileMenuOpen}
+        onClose={handleClose}
+        sx={{
+          display: { md: "none" },
+        }}
+      >
         <Box
           sx={{
+            display: { xs: "flex", md: "none" },
             width: { xs: "50vw", sm: "40vw" },
             height: "100vh",
-            display: "flex",
             flexDirection: "column",
             alignItems: "center",
             pt: 2,
@@ -96,24 +101,6 @@ const MobileNavMenu: React.FC = () => {
 
           <Social />
 
-          {/* <Divider sx={{ mt: 3 }} /> */}
-
-          {/* <Box
-            sx={{
-              position: "relative",
-              "&:before": {
-                position: "absolute",
-                content: `""`,
-                display: "block",
-                width: "100%",
-                height: "5px",
-                bgcolor: "secondary.main",
-              },
-            }}
-          >
-            {""} */}
-          {/* </Box> */}
-
           <Box
             sx={{
               display: "flex",
@@ -122,8 +109,8 @@ const MobileNavMenu: React.FC = () => {
               position: "relative",
             }}
           >
-            {Object.keys(pages).map((page: any) => (
-              <Link href={`${pages[page]}`} key={page}>
+            {Object.keys(pages).map((page) => (
+              <Link href={pages[page]} key={page}>
                 <Button
                   // size="small"
                   variant="outlined"
@@ -137,9 +124,11 @@ const MobileNavMenu: React.FC = () => {
                     color: "text.primary",
                     "&:hover": {
                       bgcolor: "secondary.main",
+                      color: "#f4ede3",
                     },
-                    ...(router.asPath === page && {
+                    ...(router.asPath === pages[page] && {
                       bgcolor: "secondary.main",
+                      color: "#f4ede3",
                     }),
                   }}
                 >

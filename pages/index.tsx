@@ -1,7 +1,8 @@
+import React from "react";
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
-import Main from "../layout/Main";
+import Main from "../layout/MainLayout";
 import styles from "../styles/Home.module.css";
 
 import Header from "../components/Home/Header";
@@ -10,13 +11,13 @@ import About from "../components/Home/About";
 
 const Home: NextPage = () => {
   return (
-    <Main>
+    <React.Fragment>
       <Header />
 
       <About />
 
       <Projects />
-    </Main>
+    </React.Fragment>
   );
 };
 

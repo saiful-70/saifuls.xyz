@@ -1,7 +1,6 @@
 import React from "react";
-import Link from "next/link";
 
-import { Box, IconButton } from "@mui/material";
+import { Box, IconButton, Link } from "@mui/material";
 
 import FacebookIcon from "@mui/icons-material/Facebook";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -30,21 +29,30 @@ const Social: React.FC = () => {
         mt: 1,
       }}
     >
+      <Link href="https://github.com/saiful-70" target="_blank" title="Github">
+        <IconButton sx={iconStyle}>
+          <BsGithub />
+        </IconButton>
+      </Link>
+
+      <Link
+        href="https://www.linkedin.com/in/saiful70/"
+        target="_blank"
+        title="LinkedIn"
+      >
+        <IconButton sx={iconStyle}>
+          <FaLinkedinIn />
+        </IconButton>
+      </Link>
       <Link
         href="https://www.facebook.com/saiful70.me/"
         target="_blank"
-        rel="noreferrer"
+        title="Facebook"
       >
         <IconButton sx={iconStyle}>
           <FaFacebookF />
         </IconButton>
       </Link>
-      <IconButton sx={iconStyle}>
-        <BsGithub />
-      </IconButton>
-      <IconButton sx={iconStyle}>
-        <FaLinkedinIn />
-      </IconButton>
     </Box>
   );
 };

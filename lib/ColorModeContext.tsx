@@ -9,11 +9,11 @@ interface IColorModeContext {
 
 export const ColorModeContext = React.createContext<IColorModeContext>({
   toggleColorMode: () => {},
-  mode: "dark",
+  mode: "light",
 });
 
 export const ColorModeContextProvider = ({ children }: any) => {
-  const [mode, setMode] = useState<"light" | "dark">("dark");
+  const [mode, setMode] = useState<"light" | "dark">("light");
   const colorMode = useMemo(
     () => ({
       toggleColorMode: () => {
@@ -32,15 +32,15 @@ export const ColorModeContextProvider = ({ children }: any) => {
           ...(mode === "light"
             ? {
                 primary: {
-                  main: "#f0e7db",
-                  light: "#f4ede3",
-                  dark: orange[900],
+                  main: "#f4ede3",
+                  light: "#f3ebe2",
+                  dark: "#a8a199",
                   contrastText: "#1a202c",
                 },
                 secondary: {
                   main: "#ff851b",
-                  light: orange[500],
-                  dark: orange[900],
+                  light: "#ff9d48",
+                  dark: "#b25d12",
                   contrastText: "#1a202c",
                 },
                 text: {
@@ -52,13 +52,13 @@ export const ColorModeContextProvider = ({ children }: any) => {
                 primary: {
                   main: "#1a202c",
                   light: "#1a202c",
-                  dark: orange[900],
+                  dark: "#12161e",
                   contrastText: "#f4ede3",
                 },
                 secondary: {
                   main: "#ff851b",
-                  light: orange[500],
-                  dark: orange[900],
+                  light: "#ff9d48",
+                  dark: "#b25d12",
                   contrastText: "#f4ede3",
                 },
                 text: {

@@ -1,47 +1,14 @@
 import React from "react";
 import Image from "next/image";
-import { Box, Divider, Typography } from "@mui/material";
+import { Box, Divider, Typography, Link, Button } from "@mui/material";
 import { keyframes } from "@emotion/react";
 import Social from "../Social";
-
-const flickerAnimation = keyframes`
-    0% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  `;
+import { useColorMode } from "../../lib/ColorModeContext";
 
 const Header: React.FC = () => {
+  const colorMode = useColorMode();
   return (
     <React.Fragment>
-      {/* <Typography
-        sx={{
-          fontFamily: '"Titillium Web", sans-serif',
-          fontWeight: "bold",
-          fontSize: { xs: 32, sm: 36, md: 48 },
-          my: 5,
-        }}
-        textAlign="center"
-      >
-        Front-end Developer {`<`}
-        <Box
-          component="span"
-          // sx={{ display: "inline" }}
-          sx={{
-            animation: `${flickerAnimation} 1.5s infinite`,
-            color: "secondary.main",
-          }}
-        >
-          _
-        </Box>
-        {`/>`}
-      </Typography> */}
-
       <Box
         sx={{
           width: "100%",
@@ -87,10 +54,76 @@ const Header: React.FC = () => {
           other acroynms gives me superpowers to develop compelling front-end,
           intuitive yet minimalistic interfaces and engaging designs.{`I'm`}{" "}
           quite confident naturally curious, and improving my skills. */}
-          Web Developer, Problem Solver
+          Front-end Developer, Tech Enthusiast
         </Typography>
       </Box>
       <Social />
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          mt: 2,
+        }}
+      >
+        <Link
+          href="https://docs.google.com/document/d/15YxBQtXQmLFtUS8sXrHEOFAzH2auGuPSl480dcqBvxo/edit?usp=sharing"
+          target="_blank"
+          sx={{ textDecoration: "none", mr: 0.3 }}
+        >
+          <Button
+            size="small"
+            color="secondary"
+            variant="contained"
+            sx={{
+              px: 2,
+              my: { xs: 0.5, md: 0 },
+              mx: { md: 0.5 },
+              fontWeight: "700",
+              transition: "all .4s",
+              color: "#f4ede3",
+              // ...(colorMode.mode === "light"
+              //   ? {
+              //       color: "text.secondary",
+              //       bgcolor: "text.primary",
+              //       "&:hover": {
+              //         bgcolor: "secondary.main",
+              //       },
+              //     }
+              //   : {
+              //       color: "text.secondary",
+              //       bgcolor: "text.primary",
+              //       "&:hover": {
+              //         color: "text.primary",
+              //         bgcolor: "secondary.main",
+              //       },
+              //     }),
+            }}
+          >
+            Resume
+          </Button>
+        </Link>
+        <Link
+          href="https://docs.google.com/document/d/15YxBQtXQmLFtUS8sXrHEOFAzH2auGuPSl480dcqBvxo/edit?usp=sharing"
+          target="_blank"
+          sx={{ textDecoration: "none", mx: 0.3 }}
+        >
+          <Button
+            size="small"
+            color="secondary"
+            variant="outlined"
+            sx={{
+              px: 2,
+              my: { xs: 0.5, md: 0 },
+              mx: { md: 0.5 },
+              fontWeight: "700",
+              color: "secondary.main",
+            }}
+          >
+            Get Resume
+          </Button>
+        </Link>
+      </Box>
       <Divider sx={{ mt: 3 }} />
     </React.Fragment>
   );

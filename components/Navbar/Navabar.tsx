@@ -7,13 +7,29 @@ import {
   Box,
   AppBar,
   IconButton,
+  Link as MuiLink,
+  Button,
 } from "@mui/material";
+import { keyframes } from "@emotion/react";
 import { MdDarkMode, MdLightMode } from "react-icons/md";
 
 import { useColorMode } from "../../lib/ColorModeContext";
 import MobileNavMenu from "./MobileNavMenu";
 import FootPrintIcon from "../../utils/icons/footPrintIcon";
 import Link from "next/link";
+import DesktopNavMenu from "./DesktopNavMenu";
+
+const flickerAnimation = keyframes`
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  `;
 
 const Navbar: React.FC = () => {
   const colorMode = useColorMode();
@@ -29,49 +45,60 @@ const Navbar: React.FC = () => {
               justifyContent: "space-between",
             }}
           >
-            <Link href="/">
-              <Box
-                sx={{
-                  display: "flex",
-                  alignItems: "center",
-                  cursor: "pointer",
-                }}
-              >
-                {/* <Box
-                sx={{
-                  position: "relative",
-                  height: "150px",
-                  width: "150px",
-                  borderRadius: "50%",
-                }}
-              >
-                <Image
-                  src="/images/catPaw.png"
-                  alt="avatar"
-                  layout="fill"
-                  style={{ borderRadius: "50%" }}
-                />
-              </Box> */}
-                <FootPrintIcon />
-                <Typography
-                  variant="h6"
-                  component="span"
+            <Box sx={{ display: "flex", alignItems: "center" }}>
+              <Link href="/">
+                <Box
                   sx={{
-                    fontFamily: '"M PLUS Rounded 1c", sans-serif',
-                    fontWeight: "700",
-                    letterSpacing: 0.1,
-                    ml: 0.5,
+                    display: "flex",
+                    alignItems: "center",
+                    cursor: "pointer",
                   }}
                 >
-                  <Box component="span" sx={{ color: "secondary.main" }}>
-                    Saiful{" "}
-                  </Box>
-                  Islam
-                </Typography>
-              </Box>
-            </Link>
+                  {/* <FootPrintIcon /> */}
+                  <Typography
+                    variant="h6"
+                    sx={{
+                      fontFamily: '"Titillium Web", sans-serif',
+                      fontWeight: "700",
+                    }}
+                    textAlign="center"
+                  >
+                    {`<`}
+                    <Box
+                      component="span"
+                      // sx={{ display: "inline" }}
+                      sx={{
+                        animation: `${flickerAnimation} 1.5s infinite`,
+                        color: "secondary.main",
+                        fontWeight: "900",
+                      }}
+                    >
+                      _
+                    </Box>
+                    {`/>`}
+                  </Typography>
+                  <Typography
+                    variant="h6"
+                    component="span"
+                    sx={{
+                      fontFamily: '"M PLUS Rounded 1c", sans-serif',
+                      fontWeight: "800",
+                      letterSpacing: 0.1,
+                      ml: 0.5,
+                    }}
+                  >
+                    <Box component="span" sx={{ color: "secondary.main" }}>
+                      Saiful{" "}
+                    </Box>
+                    Islam
+                  </Typography>
+                </Box>
+              </Link>
 
-            <Box sx={{ display: "flex" }}>
+              <DesktopNavMenu />
+            </Box>
+
+            <Box sx={{ display: "flex", alignItems: "center" }}>
               {colorMode.mode === "light" ? (
                 <IconButton
                   sx={{ mr: { xs: 1, md: 0 } }}
