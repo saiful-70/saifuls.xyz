@@ -15,8 +15,7 @@ import Social from "../Social";
 import Header from "../Home/Header";
 
 interface IPage {
-  projects: string;
-  about: string;
+  [key: string]: string;
 }
 
 export const pages: IPage = {
