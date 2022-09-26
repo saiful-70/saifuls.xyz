@@ -1,14 +1,11 @@
 import React, { useState } from "react";
-import Link from "next/link";
 
-import { Box, Grid, Button, TextField, Link as MuiLink } from "@mui/material";
+import { Box, Grid, Link as MuiLink } from "@mui/material";
 import styles from "./Projects.module.css";
 
-import HeadingSecondary from "../Heading/HeadingSecondary";
 import ProjectCard from "../Projects/ProjectCard";
 
 import { projects } from "../../utils/data/projectData";
-import BtnPrimary from "../Button/BtnPrimary";
 
 const Projects: React.FC = () => {
   const [value, setValue] = useState("");

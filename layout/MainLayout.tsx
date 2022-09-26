@@ -20,7 +20,6 @@ const MainLayout: React.FC<Props> = ({ children }) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Saiful's homepage" />
         <meta name="author" content="Saiful Islam" />
-        <link rel="apple-touch-icon" href="apple-touch-icon.png" />
         <meta
           property="og:url"
           content={`https://saifuls.xyz${router.asPath}`}

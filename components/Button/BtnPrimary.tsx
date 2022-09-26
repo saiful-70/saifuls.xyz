@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "@mui/material";
-import { useColorMode } from "../../lib/ColorModeContext";
+import { useTheme } from "../../lib/ColorModeContext";
 import Link from "next/link";
 
 interface IBtnProps {
@@ -9,7 +9,7 @@ interface IBtnProps {
 }
 
 const BtnPrimary: React.FC<IBtnProps> = ({ name, link }) => {
-  const colorMode = useColorMode();
+  const colorMode = useTheme();
 
   return (
     <Link href={`${link}`}>

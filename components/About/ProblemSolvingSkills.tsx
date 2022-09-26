@@ -1,7 +1,5 @@
 import React from "react";
-import Image from "next/image";
-import { Box, Divider, Link, Typography, colors } from "@mui/material";
-import Social from "../Social";
+import { Box, Link, Typography, colors } from "@mui/material";
 import HeadingSecondary from "../Heading/HeadingSecondary";
 
 const ProblemSolvingSkills: React.FC = () => {

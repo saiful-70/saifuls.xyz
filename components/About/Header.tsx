@@ -2,24 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { Box, Divider, Typography, Link, colors } from "@mui/material";
 
-const hyperLinks = [
-  {
-    name: "Github",
-    link: "https://github.com/saiful-70",
-  },
-  {
-    name: "LinkedIn",
-    link: "https://www.linkedin.com/in/saiful70/",
-  },
-  {
-    name: "Facebook",
-    link: "https://facebook.com/saiful70.me/",
-  },
-  {
-    name: "Resume",
-    link: "https://docs.google.com/document/d/15YxBQtXQmLFtUS8sXrHEOFAzH2auGuPSl480dcqBvxo/edit?usp=sharing",
-  },
-];
+import { aboutHyperLinks } from "../../utils/data/data";
 
 const Header: React.FC = () => {
   return (
@@ -66,7 +49,7 @@ const Header: React.FC = () => {
         <Typography>Cumilla, Chittagong, Bangladesh</Typography>
         <Typography>saiful70.me@gmail.com</Typography>
         <Box>
-          {hyperLinks.map((item) => (
+          {aboutHyperLinks.map((item) => (
             <Link
               key={item.name}
               href={item.link}

@@ -1,7 +1,5 @@
 import React from "react";
-import Image from "next/image";
-import { Box, Divider, Typography } from "@mui/material";
-import Social from "../Social";
+import { Box, Typography } from "@mui/material";
 import HeadingSecondary from "../Heading/HeadingSecondary";
 
 const Education: React.FC = () => {

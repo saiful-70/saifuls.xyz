@@ -1,7 +1,5 @@
 import React from "react";
-import Image from "next/image";
-import { Box, Divider, Link, Typography, colors, Button } from "@mui/material";
-import Social from "../Social";
+import { Box, Button } from "@mui/material";
 import HeadingSecondary from "../Heading/HeadingSecondary";
 
 const languages = ["Javascript", "Typescript", "C++", "C", "Java"];

@@ -1,12 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import { Box, Divider, Typography, Link, Button } from "@mui/material";
-import { keyframes } from "@emotion/react";
 import Social from "../Social";
-import { useColorMode } from "../../lib/ColorModeContext";
 
 const Header: React.FC = () => {
-  const colorMode = useColorMode();
   return (
     <React.Fragment>
       <Box
@@ -43,7 +40,6 @@ const Header: React.FC = () => {
             my: 1,
           }}
         >
-          {/* Hi, {`I'm `} */}
           <Box component="span" sx={{ color: "secondary.main" }}>
             Saiful{" "}
           </Box>
@@ -78,22 +74,6 @@ const Header: React.FC = () => {
               fontWeight: "700",
               transition: "all .4s",
               color: "#f4ede3",
-              // ...(colorMode.mode === "light"
-              //   ? {
-              //       color: "text.secondary",
-              //       bgcolor: "text.primary",
-              //       "&:hover": {
-              //         bgcolor: "secondary.main",
-              //       },
-              //     }
-              //   : {
-              //       color: "text.secondary",
-              //       bgcolor: "text.primary",
-              //       "&:hover": {
-              //         color: "text.primary",
-              //         bgcolor: "secondary.main",
-              //       },
-              //     }),
             }}
           >
             Resume

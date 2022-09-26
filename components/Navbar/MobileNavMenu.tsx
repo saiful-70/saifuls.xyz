@@ -1,29 +1,12 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import {
-  Button,
-  Drawer,
-  IconButton,
-  Box,
-  Divider,
-  Typography,
-} from "@mui/material";
+import { Button, Drawer, IconButton, Box, Typography } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import Image from "next/image";
 import Social from "../Social";
-import Header from "../Home/Header";
 
-interface IPage {
-  [key: string]: string;
-}
-
-export const pages: IPage = {
-  projects: "/projects",
-  about: "/about",
-};
-
-// export const pages = ["Home", "Projects", "About"];
+import { pages } from "../../utils/data/data";
 
 const MobileNavMenu: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);

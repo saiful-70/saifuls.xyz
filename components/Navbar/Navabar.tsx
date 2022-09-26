@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import Image from "next/image";
+import React from "react";
 import {
   Container,
   Typography,
@@ -7,15 +6,13 @@ import {
   Box,
   AppBar,
   IconButton,
-  Link as MuiLink,
-  Button,
 } from "@mui/material";
 import { keyframes } from "@emotion/react";
+
 import { MdDarkMode, MdLightMode } from "react-icons/md";
 
-import { useColorMode } from "../../lib/ColorModeContext";
+import { useTheme } from "../../lib/ColorModeContext";
 import MobileNavMenu from "./MobileNavMenu";
-import FootPrintIcon from "../../utils/icons/footPrintIcon";
 import Link from "next/link";
 import DesktopNavMenu from "./DesktopNavMenu";
 
@@ -32,7 +29,7 @@ const flickerAnimation = keyframes`
   `;
 
 const Navbar: React.FC = () => {
-  const colorMode = useColorMode();
+  const colorMode = useTheme();
 
   return (
     <AppBar position="fixed" sx={{ bgcolor: "primary.light" }}>
@@ -54,7 +51,6 @@ const Navbar: React.FC = () => {
                     cursor: "pointer",
                   }}
                 >
-                  {/* <FootPrintIcon /> */}
                   <Typography
                     variant="h6"
                     sx={{
@@ -66,7 +62,6 @@ const Navbar: React.FC = () => {
                     {`<`}
                     <Box
                       component="span"
-                      // sx={{ display: "inline" }}
                       sx={{
                         animation: `${flickerAnimation} 1.5s infinite`,
                         color: "secondary.main",

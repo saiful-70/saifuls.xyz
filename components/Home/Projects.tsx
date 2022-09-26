@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Grid, Button } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 import HeadingSecondary from "../Heading/HeadingSecondary";
 import ProjectCard from "../Projects/ProjectCard";
 

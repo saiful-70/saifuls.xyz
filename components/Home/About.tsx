@@ -1,4 +1,4 @@
-import { Box, Typography, Button, Link as MuiLink } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import Link from "next/link";
 import React from "react";
 import BtnPrimary from "../Button/BtnPrimary";
@@ -15,32 +15,10 @@ const About: React.FC = () => {
         interfaces and designs.{`I'm`} tech enthuasists and gradually improving
         my skills.
       </Typography>
-      {/* <Button
-        // size="small"
-        variant="outlined"
-        color="secondary"
-        sx={{
-          // width: "100%",
-          margin: "20px auto",
-          px: 2,
-          display: "block",
-          fontWeight: "700",
-          color: "secondary.contrastColor",
-          // bgcolor: "secondary.main",
-          "&:hover": {
-            bgcolor: "secondary.main",
-          },
-        }}
-      >
-        Details {">"}
-      </Button> */}
 
       <Link href="/about">
         <BtnPrimary name="Details" link="/about" />
       </Link>
-      {/* <Box sx={{ textAlign: "center" }}> */}
-
-      {/* </Box> */}
     </Box>
   );
 };

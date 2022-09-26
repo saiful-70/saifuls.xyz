@@ -1,3 +1,5 @@
+// This file will be written later
+
 import React from "react";
 import type { GetStaticPaths, GetStaticProps, NextPage } from "next";
 // import fsPromises from "fs/promises";

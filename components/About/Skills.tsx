@@ -1,7 +1,5 @@
-import { Box, Typography, Button, Divider } from "@mui/material";
-import Link from "next/link";
+import { Box, Typography, Button } from "@mui/material";
 import React from "react";
-import BtnPrimary from "../Button/BtnPrimary";
 import HeadingSecondary from "../Heading/HeadingSecondary";
 
 import { skills } from "../../utils/skillsWithIcon";

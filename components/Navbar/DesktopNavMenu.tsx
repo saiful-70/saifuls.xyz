@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { Box, Button, Link as MuiLink } from "@mui/material";
 
-import { pages } from "./MobileNavMenu";
+import { pages } from "../../utils/data/data";
 
 const DesktopNavMenu = () => {
   const router = useRouter();

@@ -1,18 +1,17 @@
 import React, { useState, useMemo, useContext } from "react";
 import { createTheme, ThemeProvider } from "@mui/material";
-import { orange } from "@mui/material/colors";
 
-interface IColorModeContext {
+interface IThemeContext {
   toggleColorMode: () => void;
   mode: "dark" | "light";
 }
 
-export const ColorModeContext = React.createContext<IColorModeContext>({
+export const ThemeContext = React.createContext<IThemeContext>({
   toggleColorMode: () => {},
   mode: "light",
 });
 
-export const ColorModeContextProvider = ({ children }: any) => {
+export const ThemeContextProvider = ({ children }: any) => {
   const [mode, setMode] = useState<"light" | "dark">("light");
   const colorMode = useMemo(
     () => ({
@@ -72,10 +71,10 @@ export const ColorModeContextProvider = ({ children }: any) => {
   );
 
   return (
-    <ColorModeContext.Provider value={colorMode}>
+    <ThemeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>{children}</ThemeProvider>
-    </ColorModeContext.Provider>
+    </ThemeContext.Provider>
   );
 };
 
-export const useColorMode = () => useContext(ColorModeContext);
+export const useTheme = () => useContext(ThemeContext);

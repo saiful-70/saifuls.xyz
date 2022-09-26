@@ -2,9 +2,6 @@ import React from "react";
 import Image from "next/image";
 import {
   Typography,
-  Card,
-  CardMedia,
-  CardContent,
   Box,
   Link,
   colors,
@@ -12,22 +9,10 @@ import {
   List,
   ListItem,
   ListItemText,
-  Divider,
 } from "@mui/material";
 import HeadingSecondary from "../Heading/HeadingSecondary";
 
-export interface PojectDescriptionProps {
-  item: {
-    slug: string;
-    imgSrc: string[];
-    name: string;
-    summary: string;
-    preview?: string;
-    repo: string;
-    stack: string;
-    description?: string[];
-  };
-}
+import { PojectDescriptionProps } from "../../utils/interface/propsInterface";
 
 const PojectDescription: React.FC<PojectDescriptionProps> = ({ item }) => {
   return (

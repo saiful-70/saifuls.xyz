@@ -1,3 +1,7 @@
+export interface IPage {
+  [key: string]: string;
+}
+
 export interface IProject {
   slug: string;
   imgSrc: string[];
@@ -7,4 +11,9 @@ export interface IProject {
   repo: string;
   stack: string;
   description?: string[];
+}
+
+export interface IAboutHyperLinks {
+  name: string;
+  link: string;
 }

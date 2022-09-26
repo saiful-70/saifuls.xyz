@@ -7,7 +7,6 @@ export const projects: IProject[] = [
       "/project-screenshots/gadget-vibe/1.png",
       "/project-screenshots/gadget-vibe/3.png",
       "/project-screenshots/gadget-vibe/2.png",
-      "/project-screenshots/gadget-vibe/5.png",
     ],
     name: "Gadget Vibe",
     summary:
@@ -24,33 +23,21 @@ export const projects: IProject[] = [
     ],
   },
   {
-    slug: "gadget-vibe-2",
-    imgSrc: [
-      "/project-screenshots/gadget-vibe/1.png",
-      "/project-screenshots/gadget-vibe/3.png",
-      "/project-screenshots/gadget-vibe/2.png",
-      "/project-screenshots/gadget-vibe/4.png",
-    ],
-    name: "Gadjet Vibe - E-commerce App - 2",
-    summary:
-      "Almost full functional e-commerce web app with the help of commreceJs api.",
+    slug: "chat-room",
+    imgSrc: ["/images/project.png"],
+    name: "Chat Room",
+    summary: "A real time private chat app controlled by different room id.",
     preview: "http://gadget-vibe.vercel.app/",
     repo: "https://github.com/saiful-70/gadget-vibe",
-    stack: "NextJs, Material UI, CommerjeJs",
+    stack: "React, Express, Socket.io",
   },
   {
-    slug: "gadget-vibe-3",
-    imgSrc: [
-      "/project-screenshots/gadget-vibe/1.png",
-      "/project-screenshots/gadget-vibe/3.png",
-      "/project-screenshots/gadget-vibe/2.png",
-      "/project-screenshots/gadget-vibe/4.png",
-    ],
-    name: "Gadjet Vibe - E-commerce App - 3",
-    summary:
-      "Almost full functional e-commerce web app with the help of commreceJs api.",
+    slug: "basic-crud-app",
+    imgSrc: ["/images/project.png"],
+    name: "Basic React-Node CRUD App",
+    summary: "",
     preview: "http://gadget-vibe.vercel.app/",
     repo: "https://github.com/saiful-70/gadget-vibe",
-    stack: "NextJs, Material UI, CommerjeJs",
+    stack: "React, ExpressJs, MongoDB, Bootstrap",
   },
 ];

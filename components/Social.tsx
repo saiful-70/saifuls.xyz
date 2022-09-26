@@ -2,10 +2,6 @@ import React from "react";
 
 import { Box, IconButton, Link } from "@mui/material";
 
-import FacebookIcon from "@mui/icons-material/Facebook";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { BsGithub } from "react-icons/bs";
 
