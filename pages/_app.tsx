@@ -3,7 +3,7 @@ import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import Script from "next/script";
 
-import { ColorModeContextProvider } from "../lib/ColorModeContext";
+import { ThemeContextProvider } from "../lib/ThemeContext";
 import MainLayout from "../layout/MainLayout";
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -23,11 +23,11 @@ function MyApp({ Component, pageProps }: AppProps) {
         `}
       </Script>
 
-      <ColorModeContextProvider>
+      <ThemeContextProvider>
         <MainLayout>
           <Component {...pageProps} />
         </MainLayout>
-      </ColorModeContextProvider>
+      </ThemeContextProvider>
     </React.Fragment>
   );
 }

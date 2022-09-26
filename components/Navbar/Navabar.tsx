@@ -11,7 +11,7 @@ import { keyframes } from "@emotion/react";
 
 import { MdDarkMode, MdLightMode } from "react-icons/md";
 
-import { useTheme } from "../../lib/ColorModeContext";
+import { useTheme } from "../../lib/ThemeContext";
 import MobileNavMenu from "./MobileNavMenu";
 import Link from "next/link";
 import DesktopNavMenu from "./DesktopNavMenu";

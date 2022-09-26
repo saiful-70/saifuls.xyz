@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "@mui/material";
-import { useTheme } from "../../lib/ColorModeContext";
+import { useTheme } from "../../lib/ThemeContext";
 import Link from "next/link";
 
 interface IBtnProps {
