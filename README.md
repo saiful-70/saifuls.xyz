@@ -12,9 +12,9 @@ Then open [http://localhost:3000](http://localhost:3000) with your browser to se
 
 ## Tools
 
-- NextJs - as frontend framework.
-- Material UI - for design the UI.
-- Vercel - for deploy the app.
+- **NextJs** - as frontend framework.
+- **Material UI** - for design the UI.
+- **Vercel** - for deploy the app.
 
 ## SEO
 
