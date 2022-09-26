@@ -18,7 +18,6 @@ const MainLayout: React.FC<Props> = ({ children }) => {
     <Box component="main" sx={{ bgcolor: "primary.main", minHeight: "100vh" }}>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="robots" content="follow, index" />
         <meta name="description" content="Saiful's homepage" />
         <meta name="author" content="Saiful Islam" />
         <link rel="apple-touch-icon" href="apple-touch-icon.png" />
