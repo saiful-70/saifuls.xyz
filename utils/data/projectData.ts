@@ -24,12 +24,20 @@ export const projects: IProject[] = [
   },
   {
     slug: "chat-room",
-    imgSrc: ["/images/project.png"],
+    imgSrc: [
+      "/project-screenshots/chat-room/1.png",
+      "/project-screenshots/chat-room/2.png",
+    ],
     name: "Chat Room",
     summary: "A real time private chat app controlled by different room id.",
-    preview: "http://gadget-vibe.vercel.app/",
-    repo: "https://github.com/saiful-70/gadget-vibe",
+    preview: "Not available",
+    repo: "https://github.com/saiful-70/chat-room",
     stack: "React, Express, Socket.io",
+    description: [
+      "Cross origin fixes.",
+      "Socket.io for real time data sharing.",
+      "Each room people can't see another room's data.",
+    ],
   },
   {
     slug: "basic-crud-app",
