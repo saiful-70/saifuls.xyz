@@ -2,7 +2,7 @@ import { Box, Typography, Button } from "@mui/material";
 import React from "react";
 import HeadingSecondary from "../Heading/HeadingSecondary";
 
-import { skills } from "../../utils/skillsWithIcon";
+import { skills } from "../skillsWithIcon";
 
 const About: React.FC = () => {
   return (

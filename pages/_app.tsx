@@ -4,7 +4,7 @@ import type { AppProps } from "next/app";
 import Script from "next/script";
 
 import { ThemeContextProvider } from "../lib/ThemeContext";
-import MainLayout from "../layout/MainLayout";
+import MainLayout from "../components/layout/MainLayout";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
