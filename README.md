@@ -16,9 +16,9 @@ Then open [http://localhost:3000](http://localhost:3000) with your browser to se
 - **Material UI** - for design the UI.
 - **Vercel** - for deploy the app.
 
-## SEO
+## SEO & Google Analytics
 
-In the project you will **.env.local.example**, rename it to **.env.local** and edit that file.If you are new, I think this [Youtube Video](https://www.youtube.com/watch?v=QAdtc7VWuNE) will help.
+In the project you will see **.env.local.example** file, rename it to **.env.local** and edit that file.If you are new, I think this [Youtube Video](https://www.youtube.com/watch?v=QAdtc7VWuNE) will help.
 
 ## License
 
