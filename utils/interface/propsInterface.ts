@@ -1,4 +1,5 @@
 export interface PojectDescriptionProps {
+  parent: string;
   item: {
     slug: string;
     imgSrc: string[];

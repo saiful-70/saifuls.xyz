@@ -30,7 +30,6 @@ export const projects: IProject[] = [
     ],
     name: "Chat Room",
     summary: "A real time private chat app controlled by different room id.",
-    preview: "Not available",
     repo: "https://github.com/saiful-70/chat-room",
     stack: "React, Express, Socket.io",
     description: [
@@ -50,7 +49,7 @@ export const projects: IProject[] = [
     name: "React-Node CRUD App",
     summary:
       "Simple student management system created with react, expressjs, mongodb.",
-    preview: "Not Available",
+
     repo: "https://github.com/saiful-70/react-node-crud",
     stack: "React, ExpressJs, MongoDB, Bootstrap",
     description: [

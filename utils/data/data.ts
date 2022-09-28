@@ -20,6 +20,6 @@ export const aboutHyperLinks: IAboutHyperLinks[] = [
   },
   {
     name: "Resume",
-    link: "https://docs.google.com/document/d/15YxBQtXQmLFtUS8sXrHEOFAzH2auGuPSl480dcqBvxo/edit?usp=sharing",
+    link: "https://docs.google.com/document/d/1wc-z6XwPXopYl_TwahvQgwsiXHtc0aDPm2cpydwLp4k/edit?usp=sharing",
   },
 ];

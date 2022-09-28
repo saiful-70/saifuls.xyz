@@ -14,7 +14,10 @@ import HeadingSecondary from "../Heading/HeadingSecondary";
 
 import { PojectDescriptionProps } from "../../utils/interface/propsInterface";
 
-const PojectDescription: React.FC<PojectDescriptionProps> = ({ item }) => {
+const PojectDescription: React.FC<PojectDescriptionProps> = ({
+  parent,
+  item,
+}) => {
   return (
     item && (
       <Box
@@ -24,7 +27,7 @@ const PojectDescription: React.FC<PojectDescriptionProps> = ({ item }) => {
           margin: "0 auto",
         }}
       >
-        <HeadingSecondary name={`Projects / ${item.name}`} />
+        <HeadingSecondary name={`${parent} / ${item.name}`} />
         <Box
           boxShadow={5}
           sx={{
@@ -32,7 +35,7 @@ const PojectDescription: React.FC<PojectDescriptionProps> = ({ item }) => {
             height: { xs: "250px", md: "300px" },
             borderRadius: "8px",
             width: "100%",
-            margin: "0 auto",
+            margin: "8px auto",
           }}
         >
           <Image
@@ -54,17 +57,21 @@ const PojectDescription: React.FC<PojectDescriptionProps> = ({ item }) => {
         <Paper sx={{ px: 2, py: 1, mt: 2, bgcolor: "primary.main" }}>
           <Typography sx={{ color: "text.primary", fontWeight: "700" }}>
             Preview :{" "}
-            <Link
-              href={item.preview}
-              target="_blank"
-              underline="hover"
-              sx={{
-                color: colors.blue[500],
-                fontWeight: "bold",
-              }}
-            >
-              {item.preview}
-            </Link>
+            {item.preview ? (
+              <Link
+                href={item.preview}
+                target="_blank"
+                underline="hover"
+                sx={{
+                  color: colors.blue[500],
+                  fontWeight: "bold",
+                }}
+              >
+                {item.preview}
+              </Link>
+            ) : (
+              <Typography component="span">Not Available</Typography>
+            )}
           </Typography>
           <Typography fontWeight="bold">
             Repository :{" "}

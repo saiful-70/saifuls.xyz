@@ -17,12 +17,18 @@ import { useRouter } from "next/router";
 
 const Index: NextPage = () => {
   const router = useRouter();
-  // console.log(router.query);
+  // console.log(router.pathname.split("/")[1].toUpperCase());
   const project = projects.filter((item) => item.slug === router.query.slug);
   // console.log(project);
   return (
     <React.Fragment>
-      <ProjectDescription item={project[0]} />
+      <ProjectDescription
+        parent={
+          router.pathname.split("/")[1].charAt(0).toUpperCase() +
+          router.pathname.split("/")[1].slice(1)
+        }
+        item={project[0]}
+      />
     </React.Fragment>
   );
 };

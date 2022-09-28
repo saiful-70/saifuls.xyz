@@ -59,7 +59,7 @@ const Header: React.FC = () => {
         }}
       >
         <Link
-          href="https://docs.google.com/document/d/15YxBQtXQmLFtUS8sXrHEOFAzH2auGuPSl480dcqBvxo/edit?usp=sharing"
+          href="https://docs.google.com/document/d/1wc-z6XwPXopYl_TwahvQgwsiXHtc0aDPm2cpydwLp4k/edit?usp=sharing"
           target="_blank"
           sx={{ textDecoration: "none", mr: 0.3 }}
         >
