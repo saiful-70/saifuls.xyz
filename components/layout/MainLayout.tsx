@@ -4,8 +4,8 @@ import { useRouter } from "next/router";
 
 import { Box, Container, CssBaseline } from "@mui/material";
 
-import Navbar from "../components/Navbar/Navabar";
-import Footer from "../components/Footer";
+import Navbar from "../Navbar/Navabar";
+import Footer from "../Footer";
 
 type Props = {
   children: React.ReactNode;
