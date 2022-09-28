@@ -37,15 +37,26 @@ export const projects: IProject[] = [
       "Cross origin fixes.",
       "Socket.io for real time data sharing.",
       "Each room people can't see another room's data.",
+      "In future, will connect with database system.",
     ],
   },
   {
     slug: "basic-crud-app",
-    imgSrc: ["/images/project.png"],
-    name: "Basic React-Node CRUD App",
-    summary: "",
-    preview: "http://gadget-vibe.vercel.app/",
-    repo: "https://github.com/saiful-70/gadget-vibe",
+    imgSrc: [
+      "/project-screenshots/react-node-crud/1.png",
+      "/project-screenshots/react-node-crud/2.png",
+      "/project-screenshots/react-node-crud/3.png",
+    ],
+    name: "React-Node CRUD App",
+    summary:
+      "Simple student management system created with react, expressjs, mongodb.",
+    preview: "Not Available",
+    repo: "https://github.com/saiful-70/react-node-crud",
     stack: "React, ExpressJs, MongoDB, Bootstrap",
+    description: [
+      "Connected react frontend with nodejs backend.",
+      "Used mongoose as mongodb's ORM model.",
+      "Learned about mongodb basic, model, controller, middleware, etc.",
+    ],
   },
 ];
