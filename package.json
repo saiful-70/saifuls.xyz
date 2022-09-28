@@ -1,5 +1,5 @@
 {
-  "name": "saifuls-portfolio",
+  "name": "saifuls.xyz",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,6 +8,9 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "keywords": [],
+  "author": "Saiful Islam",
+  "license": "MIT",
   "dependencies": {
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
