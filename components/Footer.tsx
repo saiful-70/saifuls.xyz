@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
       <Divider />
       <Box sx={{ py: 1 }}>
         <Link
-          href="https://github.com/saiful-70?tab=repositories"
+          href="https://github.com/saiful-70/saifuls.xyz"
           target="_blank"
           variant="body2"
           sx={{ color: "text.primary", textDecoration: "underline" }}
