@@ -13,12 +13,17 @@ type Props = {
 
 const MainLayout: React.FC<Props> = ({ children }) => {
   const router = useRouter();
+  const pageName =
+    router.asPath === "/"
+      ? "Home"
+      : router.asPath.split("/")[1].charAt(0).toUpperCase() +
+        router.asPath.split("/")[1].slice(1);
 
   return (
     <Box component="main" sx={{ bgcolor: "primary.main", minHeight: "100vh" }}>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Saiful's homepage" />
+        <meta name="description" content={`${pageName} | Saiful Islam`} />
         <meta name="author" content="Saiful Islam" />
         <meta
           property="og:url"
@@ -33,13 +38,7 @@ const MainLayout: React.FC<Props> = ({ children }) => {
           property="og:image"
           content="https://www.saifuls.xyz/images/avatar.jpeg"
         />
-        <title>
-          {router.asPath === "/"
-            ? "Home"
-            : router.asPath.split("/")[1].charAt(0).toUpperCase() +
-              router.asPath.split("/")[1].slice(1)}{" "}
-          | Saiful Islam
-        </title>
+        <title>{pageName} | Saiful Islam</title>
       </Head>
       <CssBaseline />
       <Navbar />
