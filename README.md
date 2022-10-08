@@ -27,7 +27,7 @@ MIT License.
 Under the following conditions you can create your own portfolio:
 
 - Fork the repository.
-- Add a link to my
+- Add a link to my [portfolio](https://www.saifuls.xyz/)
 
 Check out [LICENSE](./LICENSE) for more detail.
 
