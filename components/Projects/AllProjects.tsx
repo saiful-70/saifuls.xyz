@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import { Box, Grid, Link as MuiLink } from "@mui/material";
+import { Box, Grid, Link as MuiLink, Typography } from "@mui/material";
 import styles from "./Projects.module.css";
 
 import ProjectCard from "../Projects/ProjectCard";
@@ -15,17 +15,28 @@ const Projects: React.FC = () => {
   };
 
   return (
-    <Box sx={{ py: 10 }}>
-      <Box sx={{ display: "flex", justifyContent: "center", py: 5 }}>
+    <Box sx={{ py: 5 }}>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          py: 5,
+        }}
+      >
+        <Typography variant="subtitle1" align="center" fontWeight={700}>
+          Search Projects
+        </Typography>
         <input
-          placeholder="Search Projects"
+          placeholder="Search by Project Name/Stack/Description"
           className={`${styles.input}`}
           onChange={setChangeValue}
           style={{}}
         />
       </Box>
       {/* <HeadingSecondary name="All Projects" /> */}
-      <Grid container spacing={5} sx={{ justifyContent: "center" }}>
+      <Grid container spacing={4} sx={{ justifyContent: "center" }}>
         {value
           ? projects
               .filter(
@@ -34,6 +45,9 @@ const Projects: React.FC = () => {
                     .toLowerCase()
                     .includes(value.toLowerCase()) ||
                   filteredElement.summary
+                    .toLowerCase()
+                    .includes(value.toLowerCase()) ||
+                  filteredElement.stack
                     .toLowerCase()
                     .includes(value.toLowerCase())
               )
@@ -48,7 +62,7 @@ const Projects: React.FC = () => {
               </Grid>
             ))}
       </Grid>
-      <Box sx={{ textAlign: "center", mt: 3 }}>
+      <Box sx={{ textAlign: "center", mt: 5 }}>
         <MuiLink
           href="https://github.com/saiful-70?tab=repositories"
           target="_blank"

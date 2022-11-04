@@ -17,7 +17,7 @@ const About: React.FC = () => {
       </Typography>
 
       <Link href="/about">
-        <BtnPrimary name="Details" link="/about" />
+        <BtnPrimary name="More About Me" link="/about" />
       </Link>
     </Box>
   );
