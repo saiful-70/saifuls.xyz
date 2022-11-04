@@ -49,13 +49,31 @@ export const projects: IProject[] = [
     name: "React-Node CRUD App",
     summary:
       "Simple student management system created with react, expressjs, mongodb.",
-
     repo: "https://github.com/saiful-70/react-node-crud",
     stack: "React, ExpressJs, MongoDB, Bootstrap",
     description: [
       "Connected react frontend with nodejs backend.",
       "Used mongoose as mongodb's ORM model.",
-      "Learned about mongodb basic, model, controller, middleware, etc.",
+      "Worked with model, controller, middleware, etc. for backend part.",
+    ],
+  },
+  {
+    slug: "gitco-search",
+    imgSrc: [
+      "/project-screenshots/gitco-search/1.png",
+      "/project-screenshots/gitco-search/2.png",
+      "/project-screenshots/gitco-search/3.png",
+      "/project-screenshots/gitco-search/4.png",
+    ],
+    name: "GitCoSearch",
+    summary: "Search people of codeforces and github by their handle/username.",
+    preview: "http://gitco-search.vercel.app/",
+    repo: "https://github.com/saiful-70/gitco-search",
+    stack: "NextJs, TailwindCSS, Axios",
+    description: [
+      "Multiple request with axios.all in the replace of promise.all",
+      "Best use of useRef hook.",
+      "Tried to make the UI as simple as possible.",
     ],
   },
 ];
