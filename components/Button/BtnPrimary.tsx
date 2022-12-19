@@ -43,7 +43,7 @@ const BtnPrimary: React.FC<IBtnProps> = ({ name, link }) => {
               }),
         }}
       >
-        {name} {">"}
+        {"<"} {name} {"/>"}
       </Button>
     </Link>
   );
