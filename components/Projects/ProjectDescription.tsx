@@ -1,9 +1,10 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import {
   Typography,
   Box,
-  Link,
+  Link as MuiLink,
   colors,
   Paper,
   List,
@@ -11,8 +12,8 @@ import {
   ListItemText,
   ListItemIcon,
   Divider,
+  Breadcrumbs,
 } from "@mui/material";
-import HeadingSecondary from "../Heading/HeadingSecondary";
 import { PojectDescriptionProps } from "../../utils/interface/propsInterface";
 import { IoArrowRedo } from "react-icons/io5";
 
@@ -29,7 +30,14 @@ const PojectDescription: React.FC<PojectDescriptionProps> = ({
           margin: "0 auto",
         }}
       >
-        <HeadingSecondary name={`${parent} / ${item.name}`} />
+        <Breadcrumbs sx={{ color: "secondary.main", fontWeight: 700 }}>
+          <Link href="/projects" style={{}}>
+            Projects
+          </Link>
+          <Typography color="text.primary" sx={{ fontWeight: 500 }}>
+            {item.name}
+          </Typography>
+        </Breadcrumbs>
         <Box
           boxShadow={5}
           sx={{
@@ -68,7 +76,7 @@ const PojectDescription: React.FC<PojectDescriptionProps> = ({
           >
             Preview:{" "}
             {item.preview ? (
-              <Link
+              <MuiLink
                 href={item.preview}
                 target="_blank"
                 underline="hover"
@@ -78,7 +86,7 @@ const PojectDescription: React.FC<PojectDescriptionProps> = ({
                 }}
               >
                 {item.preview}
-              </Link>
+              </MuiLink>
             ) : (
               <Box component="span">Not Available</Box>
             )}
@@ -87,7 +95,7 @@ const PojectDescription: React.FC<PojectDescriptionProps> = ({
             sx={{ fontSize: { xs: "1.4rem", md: "1.6rem" }, fontWeight: 600 }}
           >
             Repository:{" "}
-            <Link
+            <MuiLink
               href={item.repo}
               target="_blank"
               underline="hover"
@@ -97,7 +105,7 @@ const PojectDescription: React.FC<PojectDescriptionProps> = ({
               }}
             >
               {item.repo}
-            </Link>
+            </MuiLink>
           </Typography>
           <Typography
             sx={{ fontSize: { xs: "1.4rem", md: "1.6rem" }, fontWeight: 600 }}
