@@ -7,13 +7,13 @@ const Education: React.FC = () => {
     <Box sx={{ mt: 3 }}>
       <HeadingSecondary name="Education" />
       <Box>
-        <Typography variant="subtitle1" fontWeight="bold">
-          B.Sc. Engineering in ICT (Information {`& `}Communication Technology)
+        <Typography variant="subtitle2" fontWeight="bold">
+          B.Sc. Engineering in ICT (Information {`& `}Communication Technology),
         </Typography>
-        <Typography variant="subtitle2">
+        <Typography variant="body2" fontStyle="italic">
           Comilla University, Cumilla.
         </Typography>
-        <Typography variant="subtitle2">
+        <Typography variant="body2">
           2019 - present (Running 7th semister out of 8)
         </Typography>
       </Box>

@@ -9,10 +9,12 @@ import {
   List,
   ListItem,
   ListItemText,
+  ListItemIcon,
+  Divider,
 } from "@mui/material";
 import HeadingSecondary from "../Heading/HeadingSecondary";
-
 import { PojectDescriptionProps } from "../../utils/interface/propsInterface";
+import { IoArrowRedo } from "react-icons/io5";
 
 const PojectDescription: React.FC<PojectDescriptionProps> = ({
   parent,
@@ -22,7 +24,7 @@ const PojectDescription: React.FC<PojectDescriptionProps> = ({
     item && (
       <Box
         sx={{
-          pt: 10,
+          pt: "8rem",
           maxWidth: "sm",
           margin: "0 auto",
         }}
@@ -35,7 +37,7 @@ const PojectDescription: React.FC<PojectDescriptionProps> = ({
             height: { xs: "250px", md: "300px" },
             borderRadius: "8px",
             width: "100%",
-            margin: "8px auto",
+            margin: "2rem auto",
           }}
         >
           <Image
@@ -47,16 +49,24 @@ const PojectDescription: React.FC<PojectDescriptionProps> = ({
         </Box>
 
         <Typography
-          variant="subtitle1"
+          variant="subtitle2"
           textAlign="center"
-          sx={{ px: 5, my: 1 }}
+          sx={{ px: "4rem", my: "1rem" }}
         >
           {item.summary}
         </Typography>
 
-        <Paper sx={{ px: 2, py: 1, mt: 2, bgcolor: "primary.main" }}>
-          <Typography sx={{ color: "text.primary", fontWeight: "700" }}>
-            Preview :{" "}
+        <Divider />
+
+        <Paper sx={{ px: 2, py: 1, mt: "2rem", bgcolor: "primary.main" }}>
+          <Typography
+            sx={{
+              color: "text.primary",
+              fontWeight: 600,
+              fontSize: { xs: "1.4rem", md: "1.6rem" },
+            }}
+          >
+            Preview:{" "}
             {item.preview ? (
               <Link
                 href={item.preview}
@@ -70,11 +80,13 @@ const PojectDescription: React.FC<PojectDescriptionProps> = ({
                 {item.preview}
               </Link>
             ) : (
-              <Typography component="span">Not Available</Typography>
+              <Box component="span">Not Available</Box>
             )}
           </Typography>
-          <Typography fontWeight="bold">
-            Repository :{" "}
+          <Typography
+            sx={{ fontSize: { xs: "1.4rem", md: "1.6rem" }, fontWeight: 600 }}
+          >
+            Repository:{" "}
             <Link
               href={item.repo}
               target="_blank"
@@ -87,35 +99,53 @@ const PojectDescription: React.FC<PojectDescriptionProps> = ({
               {item.repo}
             </Link>
           </Typography>
-          <Typography fontWeight="bold">
-            Stack :{" "}
+          <Typography
+            sx={{ fontSize: { xs: "1.4rem", md: "1.6rem" }, fontWeight: 600 }}
+          >
+            Stack:{" "}
             <Box component="span" sx={{ color: "secondary.main" }}>
               {item.stack}
             </Box>
           </Typography>
         </Paper>
 
-        <Paper sx={{ px: 2, py: 1, my: 3, bgcolor: "primary.main" }}>
+        <Paper
+          sx={{
+            px: "1.6rem",
+            py: "1rem",
+            my: "2.5rem",
+            bgcolor: "primary.main",
+          }}
+        >
           <Typography
             sx={{
               color: "text.primary",
               fontWeight: "700",
               textAlign: "center",
+              textDecoration: "underline",
             }}
           >
             Features and Description{" "}
           </Typography>
-          <List dense={true}>
+          <List component="ul" dense={true} sx={{ fontSize: "1.3rem" }}>
             {item.description &&
               item.description.map((listItem) => (
-                <ListItem key={listItem}>
+                <ListItem component="li" key={listItem} disablePadding>
+                  <ListItemIcon>
+                    <IoArrowRedo />
+                  </ListItemIcon>
                   <ListItemText>{listItem}</ListItemText>
                 </ListItem>
               ))}
           </List>
         </Paper>
         <Box>
-          <Typography variant="subtitle1" fontWeight="bold" textAlign="center">
+          <Typography
+            variant="subtitle1"
+            fontWeight="bold"
+            textAlign="center"
+            sx={{ textDecoration: "underline", mb: "1rem" }}
+          >
             More Images
           </Typography>
           {item.imgSrc.slice(1).map((img) => (
@@ -127,7 +157,7 @@ const PojectDescription: React.FC<PojectDescriptionProps> = ({
                 height: { xs: "250px", md: "300px" },
                 borderRadius: "8px",
                 width: "100%",
-                margin: "8px auto",
+                mb: "1.6rem",
               }}
             >
               <Image

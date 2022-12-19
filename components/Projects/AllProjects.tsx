@@ -1,10 +1,8 @@
 import React, { useState } from "react";
-
-import { Box, Grid, Link as MuiLink, Typography } from "@mui/material";
+import { Box, colors, Grid, Link as MuiLink, Typography } from "@mui/material";
+import { FiExternalLink } from "react-icons/fi";
 import styles from "./Projects.module.css";
-
 import ProjectCard from "../Projects/ProjectCard";
-
 import { projects } from "../../utils/data/projectData";
 
 const Projects: React.FC = () => {
@@ -15,27 +13,32 @@ const Projects: React.FC = () => {
   };
 
   return (
-    <Box sx={{ py: 5 }}>
+    <Box sx={{ py: { xs: "2rem", md: "2rem" } }}>
       <Box
         sx={{
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
-          py: 5,
+          py: "4rem",
         }}
       >
-        <Typography variant="subtitle1" align="center" fontWeight={700}>
+        <Typography
+          gutterBottom
+          variant="subtitle2"
+          align="center"
+          fontWeight={600}
+        >
           Search Projects
         </Typography>
         <input
-          placeholder="Search by Project Name/Stack/Description"
+          placeholder="e.g. chat, react, created, etc."
           className={`${styles.input}`}
           onChange={setChangeValue}
           style={{}}
         />
       </Box>
-      {/* <HeadingSecondary name="All Projects" /> */}
+
       <Grid container spacing={4} sx={{ justifyContent: "center" }}>
         {value
           ? projects
@@ -62,17 +65,33 @@ const Projects: React.FC = () => {
               </Grid>
             ))}
       </Grid>
-      <Box sx={{ textAlign: "center", mt: 5 }}>
-        <MuiLink
-          href="https://github.com/saiful-70?tab=repositories"
-          target="_blank"
-          variant="subtitle1"
-          underline="hover"
-          sx={{ color: "text.primary" }}
+
+      <MuiLink
+        href="https://github.com/saiful-70?tab=repositories"
+        target="_blank"
+        underline="hover"
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          fontSize: "1.3rem",
+          mt: "4rem",
+          width: "auto",
+          color: colors.blue[500],
+        }}
+      >
+        <Typography
+          sx={{
+            textAlign: "center",
+            mr: "2px",
+            fontSize: { xs: "1.3rem", md: "1.6rem" },
+            fontWeight: 600,
+          }}
         >
           More on Github
-        </MuiLink>
-      </Box>
+        </Typography>
+        <FiExternalLink />
+      </MuiLink>
     </Box>
   );
 };

@@ -19,11 +19,11 @@
     "strictNullChecks": true
   },
   "include": [
+    "pages/_document.js",
     "src/**/*",
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx",
-    "pages/_document.js"
+    "**/*.tsx"
   ],
   "exclude": ["node_modules"]
 }

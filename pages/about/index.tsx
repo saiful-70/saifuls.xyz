@@ -11,7 +11,7 @@ const Index: NextPage = () => {
     <React.Fragment>
       <Header />
       <Skills />
-      <ProgrammingLanguages />
+      {/* <ProgrammingLanguages /> */}
       <ProblemSolvingSkills />
       <Education />
     </React.Fragment>

@@ -2,7 +2,8 @@ import React from "react";
 import Image from "next/image";
 import { Box, Divider, Typography, Link, colors } from "@mui/material";
 
-import { aboutHyperLinks } from "../../utils/data/data";
+import { aboutHyperLinks } from "../../utils/data/pageAndLinkData";
+import HeadingPrimary from "../Heading/HeadingPrimary";
 
 const Header: React.FC = () => {
   return (
@@ -20,8 +21,8 @@ const Header: React.FC = () => {
         <Box
           sx={{
             position: "relative",
-            height: "150px",
-            width: "150px",
+            height: "13rem",
+            width: "13rem",
             borderRadius: "50%",
           }}
         >
@@ -32,22 +33,12 @@ const Header: React.FC = () => {
             style={{ borderRadius: "50%" }}
           />
         </Box>
-        <Typography
-          variant="h4"
-          sx={{
-            fontFamily: '"M PLUS Rounded 1c", sans-serif',
-            fontWeight: "700",
-            fontSize: { xs: 28, sm: 36, md: 48 },
-            my: 1,
-          }}
-        >
-          <Box component="span" sx={{ color: "secondary.main" }}>
-            Saiful{" "}
-          </Box>
-          Islam
-        </Typography>
-        <Typography>Cumilla, Chittagong, Bangladesh</Typography>
-        <Typography>saiful70.me@gmail.com</Typography>
+        <HeadingPrimary />
+
+        <Box sx={{ textAlign: "center", mt: "1rem" }}>
+          <Typography>Cumilla, Chittagong, Bangladesh</Typography>
+          <Typography>saiful70.me@gmail.com</Typography>
+        </Box>
         <Box>
           {aboutHyperLinks.map((item) => (
             <Link
@@ -57,8 +48,9 @@ const Header: React.FC = () => {
               underline="hover"
               sx={{
                 color: colors.blue[500],
-                fontWeight: "bold",
-                mx: 0.5,
+                fontWeight: 700,
+                mx: ".3rem",
+                fontSize: { xs: "1.3rem", md: "1.4rem" },
               }}
             >
               [{item.name}]

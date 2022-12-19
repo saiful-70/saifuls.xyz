@@ -9,7 +9,7 @@ import Link from "next/link";
 
 const Projects: React.FC = () => {
   return (
-    <Box sx={{ py: 5 }}>
+    <Box sx={{ pt: "2rem" }}>
       <HeadingSecondary name="Recent Projects" />
       <Grid container spacing={5} sx={{ justifyContent: "center" }}>
         {projects.slice(0, 3).map((item) => (

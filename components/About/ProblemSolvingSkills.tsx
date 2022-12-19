@@ -7,7 +7,7 @@ const ProblemSolvingSkills: React.FC = () => {
     <Box sx={{ mt: 3 }}>
       <HeadingSecondary name="Problem Solving Skills" />
       <Box>
-        <Typography variant="body1">
+        <Typography variant="body2">
           Solved 300+ problems and joined 50+ contests in{" "}
           <Link
             href="https://codeforces.com/profile/KhaWareZmI"
@@ -21,7 +21,7 @@ const ProblemSolvingSkills: React.FC = () => {
           </Link>{" "}
           and focused on structured way of problem solving.
         </Typography>
-        <Typography variant="body1" sx={{ mt: 1 }}>
+        <Typography variant="body2" sx={{ mt: 1 }}>
           Solved 70+ problems in{" "}
           <Link
             href="https://leetcode.com/saiful70/"
@@ -36,7 +36,7 @@ const ProblemSolvingSkills: React.FC = () => {
           and focused on data structures and algorithmic type problem.
         </Typography>
 
-        <Typography variant="body1" sx={{ mt: 1 }}>
+        <Typography variant="body2" sx={{ mt: 1 }}>
           Also, attended 5+ onsite contests and tried to solve problem at
           codechef, atcoder, lightoj, uva, codewar, etc. online judges.
         </Typography>

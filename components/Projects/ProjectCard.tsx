@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Typography, Box } from "@mui/material";
+import { Typography, Box, Divider } from "@mui/material";
 
 interface ProjectCardProps {
   item: {
@@ -34,24 +34,32 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ item }) => {
         }}
       >
         <Box
-          // boxShadow={5}
-          sx={{ position: "relative", height: "250px", borderRadius: "8px" }}
+          sx={{ position: "relative", height: "22rem", borderRadius: "8px" }}
         >
           <Image
             src={`${item.imgSrc[0]}`}
             alt="Card Image"
             layout="fill"
-            style={{ borderRadius: "8px" }}
+            style={{ borderRadius: ".8rem" }}
           />
         </Box>
-        <Box sx={{ textAlign: "center", mt: 1, px: 2 }}>
-          <Typography variant="h6" fontWeight="bold">
+        <Box sx={{ textAlign: "center", mt: "1rem", px: "1.6rem" }}>
+          <Typography variant="h6" sx={{ fontWeight: 600, fontSize: "1.8rem" }}>
             {item.name}
           </Typography>
-          <Typography gutterBottom variant="body2" fontWeight="bold">
-            ({item.stack})
+          <Typography
+            sx={{
+              fontWeight: 500,
+              fontStyle: "italic",
+              fontSize: "1.3rem",
+            }}
+          >
+            {item.stack}
           </Typography>
-          <Typography variant="body2">{item.summary}</Typography>
+          <Divider />
+          <Typography sx={{ fontSize: "1.3rem", mt: "1rem" }}>
+            {item.summary}
+          </Typography>
         </Box>
       </Box>
     </Link>

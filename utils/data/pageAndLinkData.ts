@@ -1,8 +1,8 @@
 import { IPage, IAboutHyperLinks } from "../interface/interface";
 
 export const pages: IPage = {
-  projects: "/projects",
-  about: "/about",
+  Projects: "/projects",
+  About: "/about",
 };
 
 export const aboutHyperLinks: IAboutHyperLinks[] = [

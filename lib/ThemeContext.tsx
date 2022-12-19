@@ -26,6 +26,37 @@ export const ThemeContextProvider = ({ children }: any) => {
   const theme = useMemo(
     () =>
       createTheme({
+        typography: {
+          htmlFontSize: 10,
+          fontFamily: [
+            "Fira Code",
+            "Chivo Mono",
+            "M PLUS Rounded 1c",
+            "monospace",
+            "-apple-system",
+            "BlinkMacSystemFont",
+            '"Segoe UI"',
+            "Roboto",
+            '"Helvetica Neue"',
+            "Arial",
+            "sans-serif",
+            '"Apple Color Emoji"',
+            '"Segoe UI Emoji"',
+            '"Segoe UI Symbol"',
+          ].join(","),
+        },
+        components: {
+          MuiButton: {
+            styleOverrides: {
+              root: {
+                fontSize: "1.4rem",
+                fontFamily: '"Fira Code", sans-serif',
+                letterSpacing: "1px",
+                textTransform: "none",
+              },
+            },
+          },
+        },
         palette: {
           mode,
           ...(mode === "light"

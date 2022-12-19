@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { Box, Button, Link as MuiLink } from "@mui/material";
 
-import { pages } from "../../utils/data/data";
+import { pages } from "../../utils/data/pageAndLinkData";
 
 const DesktopNavMenu = () => {
   const router = useRouter();
@@ -16,7 +16,7 @@ const DesktopNavMenu = () => {
         <Link href={pages[page]} key={page}>
           <Button
             size="small"
-            color="primary"
+            color="secondary"
             variant="outlined"
             key={page}
             sx={{

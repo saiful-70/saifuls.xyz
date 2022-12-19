@@ -1,7 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import { Box, Divider, Typography, Link, Button } from "@mui/material";
-import Social from "../Social";
+import Social from "../common/Social";
+import HeadingPrimary from "../Heading/HeadingPrimary";
 
 const Header: React.FC = () => {
   return (
@@ -31,21 +32,14 @@ const Header: React.FC = () => {
             style={{ borderRadius: "50%" }}
           />
         </Box>
+
+        <HeadingPrimary />
+
         <Typography
-          variant="h4"
-          sx={{
-            fontFamily: '"M PLUS Rounded 1c", sans-serif',
-            fontWeight: "700",
-            fontSize: { xs: 28, sm: 36, md: 48 },
-            my: 1,
-          }}
+          variant="subtitle1"
+          textAlign="center"
+          sx={{ fontSize: { xs: "1.4rem", md: "1.6rem" } }}
         >
-          <Box component="span" sx={{ color: "secondary.main" }}>
-            Saiful{" "}
-          </Box>
-          Islam
-        </Typography>
-        <Typography variant="body1" textAlign="center">
           Front-end Developer, Tech Enthusiast
         </Typography>
       </Box>
@@ -61,7 +55,7 @@ const Header: React.FC = () => {
         <Link
           href="https://docs.google.com/document/d/1wc-z6XwPXopYl_TwahvQgwsiXHtc0aDPm2cpydwLp4k/edit?usp=sharing"
           target="_blank"
-          sx={{ textDecoration: "none", mr: 0.3 }}
+          sx={{ textDecoration: "none", mr: "0.3rem" }}
         >
           <Button
             size="small"
@@ -69,8 +63,8 @@ const Header: React.FC = () => {
             variant="contained"
             sx={{
               px: 2,
-              my: { xs: 0.5, md: 0 },
-              mx: { md: 0.5 },
+              my: { xs: "0.5rem", md: 0 },
+              mx: { md: "0.5rem" },
               fontWeight: "700",
               transition: "all .4s",
               color: "#f4ede3",
@@ -82,16 +76,16 @@ const Header: React.FC = () => {
         <Link
           href="/resume/resume-saiful.pdf"
           target="_blank"
-          sx={{ textDecoration: "none", mx: 0.3 }}
+          sx={{ textDecoration: "none", mx: "0.3rem" }}
         >
           <Button
             size="small"
             color="secondary"
             variant="outlined"
             sx={{
-              px: 2,
-              my: { xs: 0.5, md: 0 },
-              mx: { md: 0.5 },
+              px: "1.5rem",
+              my: { xs: "0.5rem", md: 0 },
+              mx: { md: "0.5rem" },
               fontWeight: "700",
               color: "secondary.main",
             }}
@@ -100,7 +94,7 @@ const Header: React.FC = () => {
           </Button>
         </Link>
       </Box>
-      <Divider sx={{ mt: 3 }} />
+      <Divider sx={{ mt: "2.5rem" }} />
     </React.Fragment>
   );
 };

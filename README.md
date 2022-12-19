@@ -14,6 +14,8 @@ Then open [http://localhost:3000](http://localhost:3000) with your browser to se
 
 - **NextJs** - as frontend framework.
 - **Material UI** - for design the UI.
+- **Fira Code** - as primary font.
+- **React Icons** - for icons.
 - **Vercel** - for deploy the app.
 
 ## SEO & Google Analytics

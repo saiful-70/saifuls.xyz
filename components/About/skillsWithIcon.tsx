@@ -8,15 +8,16 @@ import {
   SiExpress,
   SiMongodb,
   SiSocketdotio,
+  SiRedux,
+  SiTypescript,
+  SiJava,
+  SiCplusplus,
+  SiC,
 } from "react-icons/si";
 import { BiGitBranch } from "react-icons/bi";
 
 export const skills = {
   main: [
-    // {
-    //   name: "Javascript",
-    //   icon: <IoLogoJavascript />,
-    // },
     {
       name: "React",
       icon: <FaReact />,
@@ -29,7 +30,6 @@ export const skills = {
       name: "Material UI",
       icon: <SiMaterialui />,
     },
-
     {
       name: "SASS",
       icon: <SiSass />,
@@ -42,7 +42,12 @@ export const skills = {
       name: "TailwindCSS",
       icon: <SiTailwindcss />,
     },
+    {
+      name: "Redux",
+      icon: <SiRedux />,
+    },
   ],
+
   secondary: [
     {
       name: "Nodejs",
@@ -63,6 +68,29 @@ export const skills = {
     {
       name: "React-Native",
       icon: <TbBrandReactNative />,
+    },
+  ],
+
+  programmingLanguages: [
+    {
+      name: "Javascript",
+      icon: <IoLogoJavascript />,
+    },
+    {
+      name: "Typescript",
+      icon: <SiTypescript />,
+    },
+    {
+      name: "C++",
+      icon: <SiCplusplus />,
+    },
+    {
+      name: "C",
+      icon: <SiC />,
+    },
+    {
+      name: "Java",
+      icon: <SiJava />,
     },
   ],
 };

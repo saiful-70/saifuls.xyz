@@ -54,8 +54,8 @@ const Navbar: React.FC = () => {
                   <Typography
                     variant="h6"
                     sx={{
-                      fontFamily: '"Titillium Web", sans-serif',
-                      fontWeight: "700",
+                      // fontFamily: '"Titillium Web", sans-serif',
+                      fontWeight: 800,
                     }}
                     textAlign="center"
                   >
@@ -65,7 +65,7 @@ const Navbar: React.FC = () => {
                       sx={{
                         animation: `${flickerAnimation} 1.5s infinite`,
                         color: "secondary.main",
-                        fontWeight: "900",
+                        fontWeight: 800,
                       }}
                     >
                       _
@@ -76,10 +76,8 @@ const Navbar: React.FC = () => {
                     variant="h6"
                     component="span"
                     sx={{
-                      fontFamily: '"M PLUS Rounded 1c", sans-serif',
-                      fontWeight: "800",
-                      letterSpacing: 0.1,
-                      ml: 0.5,
+                      fontWeight: 800,
+                      ml: ".5rem",
                     }}
                   >
                     <Box component="span" sx={{ color: "secondary.main" }}>
