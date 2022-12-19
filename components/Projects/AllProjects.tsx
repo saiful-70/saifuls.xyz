@@ -13,14 +13,14 @@ const Projects: React.FC = () => {
   };
 
   return (
-    <Box sx={{ py: { xs: "2rem", md: "2rem" } }}>
+    <Box sx={{ pt: "8rem" }}>
       <Box
         sx={{
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
-          py: "4rem",
+          pb: "4rem",
         }}
       >
         <Typography
