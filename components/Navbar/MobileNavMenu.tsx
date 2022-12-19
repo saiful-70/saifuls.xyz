@@ -10,11 +10,11 @@ import {
   Divider,
   Link as MuiLink,
 } from "@mui/material";
-import MenuIcon from "@mui/icons-material/Menu";
 import Image from "next/image";
 import Social from "../common/Social";
 import { pages } from "../../utils/data/pageAndLinkData";
 import Footer from "../Footer/Footer";
+import { BiMenuAltRight } from "react-icons/bi";
 
 const MobileNavMenu: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
@@ -37,7 +37,7 @@ const MobileNavMenu: React.FC = () => {
         aria-label="menu"
         onClick={toggleMenu}
       >
-        <MenuIcon />
+        <BiMenuAltRight />
       </IconButton>
 
       <Drawer
