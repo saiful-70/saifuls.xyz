@@ -14,9 +14,9 @@ const BtnSecondary: React.FC<IBtnProps> = ({ name, link }) => {
         color="secondary"
         size="small"
         sx={{
-          margin: "0 auto",
-          px: 2,
-          mt: 3,
+          m: "0 auto",
+          mt: "2.5rem",
+          px: "1rem",
           display: "block",
           fontWeight: "700",
           transition: "all .4s",

@@ -7,7 +7,7 @@ import { skills } from "./skillsWithIcon";
 
 const About: React.FC = () => {
   return (
-    <Box sx={{ pt: 3 }}>
+    <Box sx={{ mt: "4rem" }}>
       <HeadingSecondary name="Skills" />
       <Box>
         <Box sx={{ mb: 1 }}>

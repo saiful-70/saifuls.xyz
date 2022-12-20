@@ -51,6 +51,7 @@ export const ThemeContextProvider = ({ children }: any) => {
               root: {
                 fontSize: "1.4rem",
                 fontFamily: '"Fira Code", sans-serif',
+                fontWeight: 700,
                 letterSpacing: "1px",
                 textTransform: "none",
               },

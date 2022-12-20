@@ -8,17 +8,14 @@ const BtnLink: React.FC<IBtnProps> = ({ name, link, variant }) => {
       key={name}
       href={`${link}`}
       target="_blank"
-      sx={{ textDecoration: "none", mr: "0.3rem" }}
+      sx={{ textDecoration: "none", mr: "1rem" }}
     >
       <Button
         size="small"
         color="secondary"
         variant={variant}
         sx={{
-          px: 2,
-          my: { xs: "0.5rem", md: 0 },
-          mx: { md: "0.5rem" },
-          fontWeight: "700",
+          px: "1.5rem",
           transition: "all .4s",
           color: variant === "contained" ? "#f4ede3" : "text.primary",
         }}

@@ -7,8 +7,8 @@ const HeadingPrimary = () => {
       sx={{
         fontFamily: '"Fira Code", sans-serif',
         fontWeight: 700,
-        fontSize: { xs: "3rem", sm: "3.5rem", md: "4rem" },
-        mt: "1rem",
+        fontSize: { xs: "3.5rem", sm: "4rem", md: "5rem" },
+        // mt: "1rem",
       }}
     >
       <Box component="span" sx={{ color: "secondary.main" }}>

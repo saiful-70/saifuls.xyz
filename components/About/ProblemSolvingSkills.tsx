@@ -4,7 +4,7 @@ import HeadingSecondary from "../Heading/HeadingSecondary";
 
 const ProblemSolvingSkills: React.FC = () => {
   return (
-    <Box sx={{ mt: 3 }}>
+    <Box sx={{ mt: "4rem" }}>
       <HeadingSecondary name="Problem Solving Skills" />
       <Box>
         <Typography variant="body2">
@@ -12,6 +12,7 @@ const ProblemSolvingSkills: React.FC = () => {
           <Link
             href="https://codeforces.com/profile/KhaWareZmI"
             underline="hover"
+            target="_blank"
             sx={{
               color: colors.blue[500],
               fontWeight: "bold",
@@ -26,6 +27,7 @@ const ProblemSolvingSkills: React.FC = () => {
           <Link
             href="https://leetcode.com/saiful70/"
             underline="hover"
+            target="_blank"
             sx={{
               color: colors.blue[500],
               fontWeight: "bold",

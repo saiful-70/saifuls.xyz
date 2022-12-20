@@ -76,6 +76,8 @@ const Navbar: React.FC = () => {
                     sx={{
                       fontWeight: 800,
                       ml: ".5rem",
+                      fontFamily: "Pacifico",
+                      letterSpacing: "1px",
                     }}
                   >
                     <Box component="span" sx={{ color: "secondary.main" }}>

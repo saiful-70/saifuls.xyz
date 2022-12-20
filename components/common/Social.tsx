@@ -21,8 +21,7 @@ const Social: React.FC = () => {
     <Box
       sx={{
         display: "flex",
-        justifyContent: "center",
-        mt: 1,
+        // justifyContent: "center",
       }}
     >
       <Link href="https://github.com/saiful-70" target="_blank" title="Github">

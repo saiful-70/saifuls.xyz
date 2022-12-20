@@ -10,16 +10,16 @@ import Link from "next/link";
 const Projects: React.FC = () => {
   return (
     <Box sx={{ pt: "2rem" }}>
-      <HeadingSecondary name="Recent Projects" />
-      <Grid container spacing={5} sx={{ justifyContent: "center" }}>
-        {projects.slice(0, 3).map((item) => (
+      <HeadingSecondary name="Works" />
+      <Grid container spacing={3} sx={{ justifyContent: "center" }}>
+        {projects.slice(0, 2).map((item) => (
           <Grid item xs={12} sm={6} md={6} key={item.name}>
             <ProjectCard item={item} />
           </Grid>
         ))}
       </Grid>
       <Link href="/projects">
-        <BtnNav name="See All Projects" link="/projects" />
+        <BtnNav name="More Projects" link="/projects" />
       </Link>
     </Box>
   );
