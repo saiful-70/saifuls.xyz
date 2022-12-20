@@ -8,10 +8,6 @@ import { MdSchool, MdPlace, MdEmail } from "react-icons/md";
 import BtnLink from "../Button/BtnLink";
 
 const bio = [
-  // {
-  //   icon: <MdSchool />,
-  //   name: "Comilla University",
-  // },
   {
     icon: <MdPlace />,
     name: "Cumilla, Chittagong, Bangladesh",

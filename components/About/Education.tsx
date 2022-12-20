@@ -1,7 +1,6 @@
 import React from "react";
 import { Box, colors, Link, Typography } from "@mui/material";
 import HeadingSecondary from "../Heading/HeadingSecondary";
-import { MdSchool } from "react-icons/md";
 
 const Education: React.FC = () => {
   return (
