@@ -42,7 +42,7 @@ const PojectDescription: React.FC<PojectDescriptionProps> = ({
           boxShadow={5}
           sx={{
             position: "relative",
-            height: { xs: "250px", md: "300px" },
+            height: { xs: "22rem", md: "30rem" },
             borderRadius: "8px",
             width: "100%",
             margin: "2rem auto",
@@ -162,7 +162,7 @@ const PojectDescription: React.FC<PojectDescriptionProps> = ({
               boxShadow={5}
               sx={{
                 position: "relative",
-                height: { xs: "250px", md: "300px" },
+                height: { xs: "22rem", md: "30rem" },
                 borderRadius: "8px",
                 width: "100%",
                 mb: "1.6rem",

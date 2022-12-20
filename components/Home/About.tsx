@@ -1,7 +1,7 @@
 import { Box, Divider, Typography } from "@mui/material";
 import Link from "next/link";
 import React from "react";
-import BtnPrimary from "../Button/BtnPrimary";
+import BtnNav from "../Button/BtnSecondary";
 import HeadingSecondary from "../Heading/HeadingSecondary";
 
 const About: React.FC = () => {
@@ -17,7 +17,7 @@ const About: React.FC = () => {
       </Typography>
 
       <Link href="/about">
-        <BtnPrimary name="More About Me" link="/about" />
+        <BtnNav name="More About Me" link="/about" />
       </Link>
 
       <Divider sx={{ mt: "2.5rem" }} />

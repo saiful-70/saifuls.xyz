@@ -4,7 +4,7 @@ import HeadingSecondary from "../Heading/HeadingSecondary";
 import ProjectCard from "../Projects/ProjectCard";
 
 import { projects } from "../../utils/data/projectData";
-import BtnPrimary from "../Button/BtnPrimary";
+import BtnNav from "../Button/BtnSecondary";
 import Link from "next/link";
 
 const Projects: React.FC = () => {
@@ -19,7 +19,7 @@ const Projects: React.FC = () => {
         ))}
       </Grid>
       <Link href="/projects">
-        <BtnPrimary name="See All Projects" link="/projects" />
+        <BtnNav name="See All Projects" link="/projects" />
       </Link>
     </Box>
   );

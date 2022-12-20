@@ -15,11 +15,10 @@ import Social from "../common/Social";
 import { pages } from "../../utils/data/pageAndLinkData";
 import Footer from "../Footer/Footer";
 import { BiMenuAltRight } from "react-icons/bi";
+import BtnNav from "../Button/BtnNav";
 
 const MobileNavMenu: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
-
-  const router = useRouter();
   const toggleMenu = () => {
     setMobileMenuOpen((prev) => !prev);
   };
@@ -112,32 +111,12 @@ const MobileNavMenu: React.FC = () => {
               }}
             >
               {Object.keys(pages).map((page) => (
-                <Link href={pages[page]} key={page}>
-                  <Button
-                    size="small"
-                    variant="outlined"
-                    color="secondary"
-                    key={page}
-                    onClick={handleClose}
-                    sx={{
-                      px: "2rem",
-                      my: "0.5rem",
-                      display: "block",
-                      fontWeight: "700",
-                      color: "text.primary",
-                      "&:hover": {
-                        bgcolor: "secondary.main",
-                        color: "#f4ede3",
-                      },
-                      ...(router.asPath === pages[page] && {
-                        bgcolor: "secondary.main",
-                        color: "#f4ede3",
-                      }),
-                    }}
-                  >
-                    {page}
-                  </Button>
-                </Link>
+                <BtnNav
+                  toggleMenu={toggleMenu}
+                  key={page}
+                  name={page}
+                  link={pages[page]}
+                />
               ))}
             </Box>
           </Box>

@@ -76,4 +76,41 @@ export const projects: IProject[] = [
       "Tried to make the UI as simple as possible.",
     ],
   },
+  {
+    slug: "dolla",
+    imgSrc: [
+      "/project-screenshots/dolla/4.png",
+      "/project-screenshots/dolla/2.png",
+      // "/project-screenshots/dolla/1.png",
+      "/project-screenshots/dolla/3.png",
+      "/project-screenshots/dolla/5.png",
+    ],
+    name: "Dolla",
+    summary: "A good looking responsive react site",
+    preview: "https://dolla-dolla.netlify.app/",
+    repo: "https://github.com/saiful-70/dolla",
+    stack: "React, Styled Components, React Scroll",
+    description: [
+      "Full responsive.",
+      "Styled components for styling the components.",
+      "React scroll for active nav menu.",
+    ],
+  },
+  {
+    slug: "hisab-nikash",
+    imgSrc: [
+      "/project-screenshots/hisab-nikash/1.png",
+      "/project-screenshots/hisab-nikash/2.png",
+      "/project-screenshots/hisab-nikash/3.png",
+    ],
+    name: "Hisab Nikash",
+    summary: "A monthly budget tracker made with pure vanilla javascript",
+    preview: "https://saiful-70.github.io/hisab-nikash/",
+    repo: "https://github.com/saiful-70/hisab-nikash.git",
+    stack: "HTML, CSS, Javascript",
+    description: [
+      "DOM manipulation.",
+      "Can add and delete the income and expense separately.",
+    ],
+  },
 ];

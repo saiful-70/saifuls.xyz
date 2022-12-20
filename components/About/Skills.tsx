@@ -1,5 +1,6 @@
 import { Box, Typography, Button } from "@mui/material";
 import React from "react";
+import BtnSkill from "../Button/BtnSkill";
 import HeadingSecondary from "../Heading/HeadingSecondary";
 
 import { skills } from "./skillsWithIcon";
@@ -14,16 +15,7 @@ const About: React.FC = () => {
             Proficient In :
           </Typography>
           {skills.main.map((item) => (
-            <Button
-              startIcon={item.icon}
-              size="small"
-              key={item.name}
-              color="secondary"
-              variant="outlined"
-              sx={{ m: 0.5, fontWeight: 700, color: "text.primary" }}
-            >
-              {item.name}
-            </Button>
+            <BtnSkill key={item.name} icon={item.icon} name={item.name} />
           ))}
         </Box>
 
@@ -32,16 +24,7 @@ const About: React.FC = () => {
             Familier With :
           </Typography>
           {skills.secondary.map((item) => (
-            <Button
-              startIcon={item.icon}
-              size="small"
-              key={item.name}
-              color="secondary"
-              variant="outlined"
-              sx={{ m: 0.5, fontWeight: 700, color: "text.primary" }}
-            >
-              {item.name}
-            </Button>
+            <BtnSkill key={item.name} icon={item.icon} name={item.name} />
           ))}
         </Box>
 
@@ -50,16 +33,7 @@ const About: React.FC = () => {
             Programming Languages :
           </Typography>
           {skills.programmingLanguages.map((item) => (
-            <Button
-              startIcon={item.icon}
-              size="small"
-              key={item.name}
-              color="secondary"
-              variant="outlined"
-              sx={{ m: 0.5, fontWeight: 700, color: "text.primary" }}
-            >
-              {item.name}
-            </Button>
+            <BtnSkill key={item.name} icon={item.icon} name={item.name} />
           ))}
         </Box>
       </Box>

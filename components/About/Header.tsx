@@ -1,38 +1,30 @@
 import React from "react";
-import Image from "next/image";
 import { Box, Divider, Typography, Link, colors } from "@mui/material";
-
 import { aboutHyperLinks } from "../../utils/data/pageAndLinkData";
 import HeadingPrimary from "../Heading/HeadingPrimary";
+import ImageTemplate from "../common/ImageTemplate";
+
+const headerStyle = {
+  width: "100%",
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignItems: "center",
+  pt: 10,
+};
 
 const Header: React.FC = () => {
   return (
     <React.Fragment>
-      <Box
-        sx={{
-          width: "100%",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-          pt: 10,
-        }}
-      >
-        <Box
-          sx={{
-            position: "relative",
-            height: "13rem",
-            width: "13rem",
-            borderRadius: "50%",
-          }}
-        >
-          <Image
-            src="/images/avatar.jpeg"
-            alt="avatar"
-            layout="fill"
-            style={{ borderRadius: "50%" }}
-          />
-        </Box>
+      <Box sx={headerStyle}>
+        <ImageTemplate
+          height="10rem"
+          width="10rem"
+          borderRadius="50%"
+          src="/images/avatar.jpeg"
+          alt="avatar"
+        />
+
         <HeadingPrimary />
 
         <Box sx={{ textAlign: "center", mt: "1rem" }}>

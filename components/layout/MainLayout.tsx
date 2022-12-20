@@ -38,7 +38,7 @@ const MainLayout: React.FC<Props> = ({ children }) => {
           property="og:image"
           content="https://www.saifuls.xyz/images/avatar.jpeg"
         />
-        <title>{pageName} | Saiful Islam</title>
+        <title>{`${pageName} | Saiful Islam`}</title>
       </Head>
       <CssBaseline />
       <Navbar />

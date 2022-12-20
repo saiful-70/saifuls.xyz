@@ -7,7 +7,7 @@ const Education: React.FC = () => {
     <Box sx={{ mt: 3 }}>
       <HeadingSecondary name="Education" />
       <Box>
-        <Typography variant="subtitle2" fontWeight="bold">
+        <Typography variant="subtitle2" fontWeight={600}>
           B.Sc. Engineering in ICT (Information {`& `}Communication Technology),
         </Typography>
         <Typography variant="body2" fontStyle="italic">

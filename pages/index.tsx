@@ -9,9 +9,7 @@ const Home: NextPage = () => {
   return (
     <React.Fragment>
       <Header />
-
       <About />
-
       <Projects />
     </React.Fragment>
   );

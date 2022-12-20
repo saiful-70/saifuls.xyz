@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Box, IconButton, Link, Divider } from "@mui/material";
+import { Box, IconButton, Link } from "@mui/material";
 
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { BsGithub } from "react-icons/bs";

@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import {
   Container,
   Typography,
@@ -8,12 +9,9 @@ import {
   IconButton,
 } from "@mui/material";
 import { keyframes } from "@emotion/react";
-
 import { MdDarkMode, MdLightMode } from "react-icons/md";
-
 import { useTheme } from "../../lib/ThemeContext";
 import MobileNavMenu from "./MobileNavMenu";
-import Link from "next/link";
 import DesktopNavMenu from "./DesktopNavMenu";
 
 const flickerAnimation = keyframes`

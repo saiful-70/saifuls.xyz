@@ -5,6 +5,16 @@ import styles from "./Projects.module.css";
 import ProjectCard from "../Projects/ProjectCard";
 import { projects } from "../../utils/data/projectData";
 
+const moreStyle = {
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  fontSize: "1.3rem",
+  mt: "4rem",
+  width: "auto",
+  color: colors.blue[500],
+};
+
 const Projects: React.FC = () => {
   const [value, setValue] = useState("");
   const setChangeValue = (e: any) => {
@@ -70,15 +80,7 @@ const Projects: React.FC = () => {
         href="https://github.com/saiful-70?tab=repositories"
         target="_blank"
         underline="hover"
-        sx={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          fontSize: "1.3rem",
-          mt: "4rem",
-          width: "auto",
-          color: colors.blue[500],
-        }}
+        sx={moreStyle}
       >
         <Typography
           sx={{

@@ -2,19 +2,14 @@ import React from "react";
 import { Button } from "@mui/material";
 import { useTheme } from "../../lib/ThemeContext";
 import Link from "next/link";
+import { IBtnProps } from "../../utils/interface/propsInterface";
 
-interface IBtnProps {
-  link?: string;
-  name: string;
-}
-
-const BtnPrimary: React.FC<IBtnProps> = ({ name, link }) => {
+const BtnSecondary: React.FC<IBtnProps> = ({ name, link }) => {
   const colorMode = useTheme();
 
   return (
     <Link href={`${link}`}>
       <Button
-        // size="small"
         variant="outlined"
         color="secondary"
         size="small"
@@ -48,4 +43,4 @@ const BtnPrimary: React.FC<IBtnProps> = ({ name, link }) => {
     </Link>
   );
 };
-export default BtnPrimary;
+export default BtnSecondary;
