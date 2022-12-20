@@ -40,7 +40,20 @@ const Header: React.FC = () => {
         />
 
         <Box mt=".5rem" mb="1rem">
-          <HeadingPrimary />
+          <Typography
+            variant="h1"
+            sx={{
+              fontFamily: '"Fira Code", sans-serif',
+              fontWeight: 700,
+              fontSize: { xs: "2.5rem", sm: "3rem", md: "3.5rem" },
+              // mt: "1rem",
+            }}
+          >
+            <Box component="span" sx={{ color: "secondary.main" }}>
+              Saiful{" "}
+            </Box>
+            Islam
+          </Typography>
           <Social />
         </Box>
 
