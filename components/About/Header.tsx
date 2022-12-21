@@ -1,11 +1,9 @@
 import React from "react";
-import { Box, Divider, Typography, Link, colors } from "@mui/material";
-import { aboutHyperLinks } from "../../utils/data/pageAndLinkData";
-import HeadingPrimary from "../Heading/HeadingPrimary";
+import { Box, Typography } from "@mui/material";
 import ImageTemplate from "../common/ImageTemplate";
 import Social from "../common/Social";
 import { MdSchool, MdPlace, MdEmail } from "react-icons/md";
-import BtnLink from "../Button/BtnLink";
+import ResumeButtons from "../common/ResumeButtons";
 
 const bio = [
   {
@@ -76,40 +74,8 @@ const Header: React.FC = () => {
             </Typography>
           ))}
         </Box>
-        <Box
-          sx={{
-            mt: "1rem",
-          }}
-        >
-          <BtnLink
-            link="https://docs.google.com/document/d/1wc-z6XwPXopYl_TwahvQgwsiXHtc0aDPm2cpydwLp4k/edit?usp=sharing"
-            name="Resume"
-            variant="contained"
-          />
-          <BtnLink
-            link="/resume/resume-saiful.pdf"
-            name="Get Resume"
-            variant="outlined"
-          />
-        </Box>
-        {/* <Box>
-          {aboutHyperLinks.map((item) => (
-            <Link
-              key={item.name}
-              href={item.link}
-              target="_blank"
-              underline="hover"
-              sx={{
-                color: colors.blue[500],
-                fontWeight: 700,
-                mr: ".3rem",
-                fontSize: { xs: "1.3rem", md: "1.4rem" },
-              }}
-            >
-              [{item.name}]
-            </Link>
-          ))}
-        </Box> */}
+
+        <ResumeButtons />
       </Box>
     </React.Fragment>
   );

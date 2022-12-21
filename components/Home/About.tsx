@@ -9,11 +9,14 @@ const About: React.FC = () => {
     <Box sx={{ pt: "2rem" }}>
       <HeadingSecondary name="Me" />
       <Typography variant="body2">
-        {`I'm`} a Front-end developer and problem solver. I love JavaScript and
-        C++. {`I'm`} learning javascript and {`it's`} related technology for 3+
-        years. Which is helping me to develop intuitive, minimalistics front-end
-        interfaces and designs.{`I'm`} passionate, enthuasists and gradually
-        improving my skills.
+        {`I'm`} a passionate and enthuastic programmer. My core skill is based
+        on JavaScript. {`I'm`} learning and implementing javascript and {`it's`}{" "}
+        related technology for 3+ years. Which is helping me to develop
+        intuitive, minimalistics front-end interfaces and designs. I also love
+        C++ which is helped me to build my programming skill and logic
+        foundation. Now {`I'm`} studying in Comilla University in Cumilla,
+        Bangladesh and my last year is going on. I am available for any kind of
+        job opportunity that suits my interests.
       </Typography>
 
       <Link href="/about">

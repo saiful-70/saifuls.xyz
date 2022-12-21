@@ -2,6 +2,7 @@ import React from "react";
 import { Box, Divider, Typography } from "@mui/material";
 import HeadingPrimary from "../Heading/HeadingPrimary";
 import BtnLink from "../Button/BtnLink";
+import ResumeButtons from "../common/ResumeButtons";
 
 const headerStyle = {
   width: "100%",
@@ -24,22 +25,7 @@ const Header: React.FC = () => {
           Web Developer | Programmer
         </Typography>
 
-        <Box
-          sx={{
-            mt: "1rem",
-          }}
-        >
-          <BtnLink
-            link="https://docs.google.com/document/d/1wc-z6XwPXopYl_TwahvQgwsiXHtc0aDPm2cpydwLp4k/edit?usp=sharing"
-            name="Resume"
-            variant="contained"
-          />
-          <BtnLink
-            link="/resume/resume-saiful.pdf"
-            name="Get Resume"
-            variant="outlined"
-          />
-        </Box>
+        <ResumeButtons />
       </Box>
 
       <Divider sx={{ mt: "2.5rem" }} />

@@ -1,8 +1,8 @@
 import React from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
-
 import { Box, Container, CssBaseline } from "@mui/material";
+import { motion } from "framer-motion";
 
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
@@ -42,10 +42,34 @@ const MainLayout: React.FC<Props> = ({ children }) => {
       </Head>
       <CssBaseline />
       <Navbar />
-      <Container maxWidth="md">
-        <Box sx={{ px: { xs: "1rem", md: "0" } }}>{children}</Box>
-        <Footer />
-      </Container>
+
+      <motion.div
+        key={router.route}
+        initial="pageInit"
+        animate="pageAnimate"
+        exit="pageExit"
+        variants={{
+          pageInit: { x: 0, y: -150, opacity: 0 },
+          pageAnimate: { x: 0, y: 0, opacity: 1 },
+          pageExit: { x: 0, y: -150, opacity: 0 },
+        }}
+        transition={{
+          y: {
+            type: "spring",
+            stiffness: 260,
+            damping: 20,
+            duration: 0.7,
+            delay: 0.3,
+            ease: "easeInOut",
+          },
+          opacity: { delay: 0.1, duration: 0.3, ease: "easeIn" },
+        }}
+      >
+        <Container maxWidth="md">
+          <Box sx={{ px: { xs: "1rem", md: "0" } }}>{children}</Box>
+          <Footer />
+        </Container>
+      </motion.div>
     </Box>
   );
 };

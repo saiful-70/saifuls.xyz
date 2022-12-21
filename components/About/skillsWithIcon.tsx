@@ -13,6 +13,7 @@ import {
   SiJava,
   SiCplusplus,
   SiC,
+  SiAngular,
 } from "react-icons/si";
 import { BiGitBranch } from "react-icons/bi";
 
@@ -69,6 +70,10 @@ export const skills = {
       name: "React-Native",
       icon: <TbBrandReactNative />,
     },
+    // {
+    //   name: "Angular",
+    //   icon: <SiAngular />,
+    // },
   ],
 
   programmingLanguages: [
