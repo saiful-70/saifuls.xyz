@@ -8,7 +8,7 @@ const ResumeButtons: React.FC = () => {
       }}
     >
       <BtnLink
-        link="https://drive.google.com/file/d/12iUFJDWoJzFHxBu12opuEXbHcB-GNp4u/view?usp=share_link"
+        link="https://drive.google.com/file/d/14qcy1BhSHPsAgBG_NrdhyHEqDzMHE5bX/view?usp=share_link"
         name="Resume"
         variant="contained"
       />
