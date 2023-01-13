@@ -2,6 +2,31 @@ import { IProject } from "../interface/interface";
 
 export const projects: IProject[] = [
   {
+    slug: "snapshot",
+    imgSrc: [
+      "/project-screenshots/snapshot/1.png",
+      "/project-screenshots/snapshot/2.png",
+      "/project-screenshots/snapshot/3.png",
+      "/project-screenshots/snapshot/4.png",
+      "/project-screenshots/snapshot/5.png",
+      "/project-screenshots/snapshot/6.png",
+      "/project-screenshots/snapshot/7.png",
+      "/project-screenshots/snapshot/8.png",
+    ],
+    name: "SnapShot",
+    summary:
+      "A complete social media web application with one-to-one chat functionality.",
+    preview: "https://snapshot-beryl.vercel.app/",
+    repo: "https://github.com/saiful-70/snapshot/",
+    stack: "React, Redux, Express, Nodejs, MongoDB, Socket.io, Material UI",
+    description: [
+      "Developed a feature-rich full-stack social media web application with one-to-one chat functionality.",
+      "Utilizing technologies such as Redux for state management, Socket.io for real-time data sharing, Cloudinary for cloud-based image storage and JWT for robust authentication and authorization.",
+      "Implemented CORS policies based on best practices.",
+      "Overcame challenges while designing and implementing a comprehensive API, managing application state, implementing cloud-based image storage, and integrating one-to-one chat functionality.",
+    ],
+  },
+  {
     slug: "gadget-vibe",
     imgSrc: [
       "/project-screenshots/gadget-vibe/1.png",
@@ -20,6 +45,26 @@ export const projects: IProject[] = [
       "Implemented authentication with email token, cart, checkout, etc.",
       "Tried to add every necessary component of the MUI framework for design the UI.",
       "Mainly focused on functionality of the application. ",
+    ],
+  },
+  {
+    slug: "rick-morty-wiki",
+    imgSrc: [
+      "/project-screenshots/rick-morty-wiki/1.png",
+      "/project-screenshots/rick-morty-wiki/2.png",
+      "/project-screenshots/rick-morty-wiki/3.png",
+      "/project-screenshots/rick-morty-wiki/4.png",
+    ],
+    name: "Gadget Vibe",
+    summary:
+      "Almost full functional e-commerce web app(Desktop) with the help of commreceJs api.",
+    preview: "http://rick-morty-wiki-nine.vercel.app/",
+    repo: "https://github.com/saiful-70/rick-morty-wiki/",
+    stack: "NextJs, Material UI",
+    description: [
+      "Converted a figma file to React.",
+      "Used REST API for data given by their documentation.",
+      "100% responsive website.",
     ],
   },
   {
