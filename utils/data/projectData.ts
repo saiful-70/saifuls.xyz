@@ -16,7 +16,7 @@ export const projects: IProject[] = [
     name: "SnapShot",
     summary:
       "A complete social media web application with one-to-one chat functionality.",
-    preview: "https://snapshot-beryl.vercel.app/",
+    preview: "https://snapshot-social.vercel.app/",
     repo: "https://github.com/saiful-70/snapshot/",
     stack: "React, Redux, Express, Nodejs, MongoDB, Socket.io, Material UI",
     description: [
