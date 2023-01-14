@@ -13,7 +13,7 @@ const ResumeButtons: React.FC = () => {
         variant="contained"
       />
       <BtnLink
-        link="https://github.com/saiful-70/saifuls.xyz/blob/main/public/resume/resume_saiful.pdf"
+        link="https://github.com/saiful-70/saifuls.xyz/raw/main/public/resume/resume_saiful.pdf"
         name="Get Resume"
         variant="outlined"
       />
