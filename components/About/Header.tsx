@@ -33,7 +33,7 @@ const Header: React.FC = () => {
           height="12rem"
           width="12rem"
           borderRadius="50%"
-          src="/images/avatar.jpeg"
+          src="/images/avatar.jpg"
           alt="avatar"
         />
 
