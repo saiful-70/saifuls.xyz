@@ -22,7 +22,7 @@ const Header: React.FC = () => {
           variant="subtitle1"
           sx={{ fontSize: { xs: "1.4rem", md: "1.6rem" }, fontWeight: 500 }}
         >
-          Web Developer | Programmer
+          Software Engineer | Tech Enthusiast 
         </Typography>
 
         <ResumeButtons />

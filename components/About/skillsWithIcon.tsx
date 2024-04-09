@@ -1,24 +1,32 @@
-import { FaReact, FaBootstrap, FaHtml5, FaCss3 } from "react-icons/fa";
-import { IoLogoJavascript, IoLogoNodejs } from "react-icons/io";
-import { TbBrandNextjs, TbBrandReactNative } from "react-icons/tb";
-import {
-  SiMaterialui,
-  SiSass,
-  SiTailwindcss,
-  SiExpress,
-  SiMongodb,
-  SiSocketdotio,
-  SiRedux,
-  SiTypescript,
-  SiJava,
-  SiCplusplus,
-  SiC,
-  SiAngular,
-} from "react-icons/si";
 import { BiGitBranch } from "react-icons/bi";
+import { BsBootstrap } from "react-icons/bs";
+import { FaAws, FaDocker, FaJava, FaReact } from "react-icons/fa";
+import { IoLogoJavascript, IoLogoNodejs } from "react-icons/io";
+import {
+  SiAngular,
+  SiC,
+  SiCplusplus,
+  SiExpress,
+  SiJetpackcompose,
+  SiKotlin,
+  SiMaterialdesign,
+  SiMongodb,
+  SiNgrx,
+  SiRedux,
+  SiSass,
+  SiSocketdotio,
+  SiTailwindcss,
+  SiTypescript
+} from "react-icons/si";
+import { TbBrandNextjs, TbBrandReactNative } from "react-icons/tb";
+
 
 export const skills = {
   main: [
+    {
+      name: "Angular",
+      icon: <SiAngular />,
+    },
     {
       name: "React",
       icon: <FaReact />,
@@ -29,11 +37,15 @@ export const skills = {
     },
     {
       name: "Material UI",
-      icon: <SiMaterialui />,
+      icon: <SiMaterialdesign />,
     },
     {
       name: "SASS",
       icon: <SiSass />,
+    },
+    {
+      name: "Bootstrap",
+      icon: <BsBootstrap />,
     },
     {
       name: "Git",
@@ -46,6 +58,10 @@ export const skills = {
     {
       name: "Redux",
       icon: <SiRedux />,
+    },
+    {
+      name: "RxJS",
+      icon: <SiNgrx />,
     },
   ],
 
@@ -70,10 +86,19 @@ export const skills = {
       name: "React-Native",
       icon: <TbBrandReactNative />,
     },
-    // {
-    //   name: "Angular",
-    //   icon: <SiAngular />,
-    // },
+    {
+      name: "Jetpack Compose",
+      icon: <SiJetpackcompose />,
+    },
+    {
+      name: "Docker",
+      icon: <FaDocker />,
+    },
+    {
+      name: "AWS",
+      icon: <FaAws />,
+    },
+
   ],
 
   programmingLanguages: [
@@ -95,7 +120,11 @@ export const skills = {
     },
     {
       name: "Java",
-      icon: <SiJava />,
+      icon: <FaJava />,
+    },
+    {
+      name: "Kotlin",
+      icon: <SiKotlin />,
     },
   ],
 };

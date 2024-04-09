@@ -55,9 +55,9 @@ export const projects: IProject[] = [
       "/project-screenshots/rick-morty-wiki/3.png",
       "/project-screenshots/rick-morty-wiki/4.png",
     ],
-    name: "Gadget Vibe",
+    name: "Ricky Morty Wiki",
     summary:
-      "Almost full functional e-commerce web app(Desktop) with the help of commreceJs api.",
+      "A pixel perfect full responsive ricky morty wiki.",
     preview: "http://rick-morty-wiki-nine.vercel.app/",
     repo: "https://github.com/saiful-70/rick-morty-wiki/",
     stack: "NextJs, Material UI",
