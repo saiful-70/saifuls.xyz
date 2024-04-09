@@ -8,11 +8,11 @@ import {
   AppBar,
   IconButton,
 } from "@mui/material";
-import { keyframes } from "@emotion/react";
 import { MdDarkMode, MdLightMode } from "react-icons/md";
 import { useTheme } from "../../lib/ThemeContext";
 import MobileNavMenu from "./MobileNavMenu";
 import DesktopNavMenu from "./DesktopNavMenu";
+import { keyframes } from '@mui/system';
 
 const flickerAnimation = keyframes`
     0% {
